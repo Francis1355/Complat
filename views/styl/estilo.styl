@@ -1,0 +1,450 @@
+@import "normalize.styl"
+@import "font-awesome.min.styl"
+col_header = #333333
+color_font = #3A3A3A
+azul_complat = #114DFF
+col_fail = #F10000
+col_success = #00AE00
+col_info = #FF6600
+body 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size 16px 
+	color color_font
+	
+//Inicia Header
+
+header 
+	background col_header
+	height 80px 
+	position fixed 
+	top 0 
+	left 0 
+	width 100% 
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+
+.container-header
+	//background red 
+	height 80px 
+	margin auto 
+	position relative 
+	width 1024px 
+
+.complat-logo
+	left 0
+	position absolute
+	top 10px 
+	width 180px 
+	
+.nav-desktop 
+	height 80px 
+	list-style none 
+	position absolute 
+	right 0 
+	width 800px
+	//background red 
+	font-weight bold 
+	font-size 14px 
+	
+.nav-desktop ul 
+	bottom 0 
+	box-sizing border-box
+	height 60px
+	list-style none 
+	margin-bottom auto 
+	margin-top auto 
+	padding 20px 10px 10px 10px
+	position absolute
+	top 0 
+	width 100%  
+.nav-desktop ul li 
+	display inline-block 
+	float right 
+.nav-desktop ul li a
+	box-sizing border-box
+	color white	 
+	font-style lighter 
+	padding 20px 20px 20px 20px 
+	text-align center 
+	text-decoration none 
+	&:hover
+		background azul_complat
+		border-radius 2px 
+		transition-duration 0.5s	
+
+//Termina Header
+
+
+//Inicia clases generales Desktop 
+.container 
+	height auto  
+	margin auto
+	margin-top 120px  
+	position relative 
+	width 1024px 
+	
+
+
+//Mensajes de ajax
+
+.icon-exclamation:before 
+	color white 
+	content "\f071"
+	font-family "FontAwesome"
+	font-size 40px 
+
+.icon-info:before 
+	color white 
+	content "\f05a"
+	font-family "FontAwesome"
+	font-size 45px 
+	
+.div-icon-warning 
+	bottom 0 
+	height 40px 
+	margin-bottom auto 
+	margin-top auto 
+	position absolute
+	top 0 
+	width 40px 
+
+.div-texto-warning
+	bottom 0
+	color white 
+	font-weight bold 
+	height 40px 
+	left 50px
+	margin-bottom auto 
+	margin-top auto 
+	padding-bottom 10px  
+	position absolute
+	top 0
+	width 90%
+	
+.p-texto-warning 
+	margin-left 8px 
+
+.warning-fail
+	background col_fail
+	box-sizing border-box 
+	height 60px 
+	margin-bottom 10px
+	padding 5px 5px 5px 5px 
+	position relative
+	width 100%
+	
+
+.warning-success
+	background col_success
+	box-sizing border-box 
+	height 60px 
+	margin-bottom 10px
+	padding 5px 5px 5px 5px 
+	position relative
+	width 100%
+	
+.warning-info 
+	background col_info
+	box-sizing border-box 
+	height 60px 
+	margin-bottom 10px
+	padding 5px 5px 5px 5px 
+	position relative
+	width 100%
+//Termina clases generales Desktop 
+
+
+//Inicia login
+
+.fondo-obscuro
+	position fixed 
+	top 0
+	left 0
+	width 100%
+	height 100%
+	opacity 0.6
+	background-color #000
+	z-index 2
+	display none
+
+.login-box 
+	width 550px 
+	height auto 
+	background white 
+	z-index 4
+	position relative
+	margin auto 
+	margin-top -260px 
+	padding 10px 10px 10px 10px 
+	box-sizing border-box
+	display none 
+	border-radius 2px 
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+.login-box ul 
+	list-style none 
+.login-box ul li 
+	margin-left -40px 
+	margin-bottom 5px 
+
+.btn-cerrar-login
+	float right 
+	text-decoration none 
+	color black 
+	font-size 18px 
+	&:hover 
+		transition-duration 0.2s
+		color azul_complat
+
+.form-login 
+	list-style none 
+	border-top solid 1px #E6E6E6
+	border-bottom solid 1px #E6E6E6
+	padding-top 20px 
+	
+.form-login  li 
+	margin-left -40px 
+.form-login li label 
+	margin-left -5px 
+	
+
+.form-login input, label, button 
+	width 100%  
+	margin-bottom 20px 
+	padding 5px 
+	box-sizing border-box
+	border none 
+	color #3A3A3A 
+	text-align center 
+	
+.form-login input
+	outline none 
+	margin-top 5px 
+	color #666
+	border 1px solid #AAA
+	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
+	border-radius 2px
+	height 40px 
+	&:focus 
+		background #fff
+		border 1px solid azul_complat //#555
+ 		outline none 
+
+
+.form-login li button
+	margin-top 20px 
+	
+
+@keyframes pulse
+	0% {transform: scale(0);}
+	75% {transform: scale(1.4);}
+	100% {transform: scale(1);}
+
+
+.form-login li label 
+	input[type="checkbox"] 
+		display none 		
+		+ .label-text:before
+			content "\f096"
+			font-family "FontAwesome"
+			speak none 
+			font-style normal 
+			font-weight normal
+			font-variant normal
+			text-transform none 
+			line-height 1
+			-webkit-font-smoothing antialiased 
+			width 1em 
+			display inline-block 
+			margin-right 5px 
+			font-size 18px 
+		&:checked + .label-text:before
+			content "\f14a"
+			color azul_complat //#00D079
+			animation pulse 180ms ease-in
+					
+		&:disabled + .label-text
+			color #aaa
+			&:before 
+				content "\f0c8"
+				color #ccc
+.form-login li button 
+	background azul_complat
+	color white 
+	padding 15px 15px 15px 15px 
+	box-sizing border-box  
+	border-radius 2px
+	&:hover 
+		background #0031C2
+		transition-duration 0.5s
+	&:active 
+		background #002081
+
+.icon-login:before
+	content "\f023"
+	font-family "FontAwesome"
+	margin-right 5px 
+	color red
+.titulo-login
+	color red  
+	
+.icon-user:before 
+	content "\f007"
+	font-family "FontAwesome"
+	margin-right 5px 
+.icon-pass:before 
+	content "\f09c"
+	font-family "FontAwesome"
+	margin-right 5px 
+	
+	
+
+//Termina login 
+
+
+//Inicia registro 
+
+.registro-box 
+	width 550px 
+	height auto 
+	background white 
+	z-index 4
+	position relative
+	margin auto 
+	margin-top -260px 
+	padding 10px 10px 10px 10px 
+	box-sizing border-box
+	display none 
+	border-radius 2px 
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+.registro-box ul 
+	list-style none 
+.registro-box ul li 
+	margin-left -40px 
+	margin-bottom 5px 
+
+.btn-cerrar-registro
+	float right 
+	text-decoration none 
+	color black 
+	font-size 18px 
+	&:hover 
+		transition-duration 0.2s
+		color azul_complat
+
+.form-registro
+	list-style none 
+	border-top solid 1px #E6E6E6
+	border-bottom solid 1px #E6E6E6
+	padding-top 20px 
+	
+.form-registro  li 
+	margin-left -40px 
+.form-registro li label 
+	margin-left -5px 
+	
+
+.form-registro input, label, button 
+	width 100%  
+	margin-bottom 20px 
+	padding 5px 
+	box-sizing border-box
+	border none 
+	color #3A3A3A 
+	text-align center 
+
+.form-registro button
+	margin-bottom 0
+	
+.form-registro input
+	outline none 
+	margin-top 5px 
+	color #666
+	border 1px solid #AAA
+	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
+	border-radius 2px
+	height 40px 
+	&:focus 
+		background #fff
+		border 1px solid azul_complat //#555
+ 		outline none 
+
+
+.form-registro li button
+	margin-top 20px 
+	
+
+.form-registro li label 
+	input[type="checkbox"] 
+		display none 		
+		+ .label-text:before
+			content "\f096"
+			font-family "FontAwesome"
+			speak none 
+			font-style normal 
+			font-weight normal
+			font-variant normal
+			text-transform none 
+			line-height 1
+			-webkit-font-smoothing antialiased 
+			width 1em 
+			display inline-block 
+			margin-right 5px 
+			font-size 18px 
+		&:checked + .label-text:before
+			content "\f14a"
+			color azul_complat //#00D079
+			animation pulse 180ms ease-in
+					
+		&:disabled + .label-text
+			color #aaa
+			&:before 
+				content "\f0c8"
+				color #ccc
+				
+.form-registro li button 
+	background azul_complat
+	color white 
+	padding 15px 15px 15px 15px 
+	box-sizing border-box  
+	border-radius 2px
+	&:hover 
+		background #0031C2
+		transition-duration 0.5s
+	&:active 
+		background #002081
+
+.icon-login:before
+	content "\f023"
+	font-family "FontAwesome"
+	margin-right 5px 
+	color red
+.titulo-registro
+	color red  
+	
+.icon-user:before 
+	content "\f007"
+	font-family "FontAwesome"
+	margin-right 5px 
+.icon-pass:before 
+	content "\f09c"
+	font-family "FontAwesome"
+	margin-right 5px 
+	
+.icon-email:before 
+	content "\f0e0"
+	font-family "FontAwesome"
+	margin-right 5px 
+	
+.icon-registro:before 
+	content "\f090"
+	font-family "FontAwesome"
+	margin-right 5px 
+
+
+//Termina registro 
+

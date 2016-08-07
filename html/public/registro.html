@@ -1,0 +1,26 @@
+<div class="fondo-obscuro" id="fondo_obscuro"></div>
+<div class="registro-box" id="registro_box" onkeypress="return runScriptReg(event)">
+	<div id="_AJAX_REG_"></div>
+	<a href="#" class="btn-cerrar-registro" id="btn_cerrar_registro">X</a>
+	<h3 class="titulo-registro"><span class="icon-registro"></span>Registro</h3>
+	<ul class="form-registro">
+		<li><label for="user"><span class="icon-user"></span><strong>Usuario</strong></label></li>
+		<li><input type="text" name="user" id="user_reg" placeholder="Usuario"></li>
+
+		<li><label for="email"><span class="icon-email"></span><strong>Email</strong></label></li>
+		<li><input type="text" name="email" id="email_reg" placeholder="Email"></li>
+
+		<li><label for="pass1"><span class="icon-pass"></span><strong>Contraseña</strong></label></li>
+		<li><input type="password" name="pass1" id="pass1_reg" placeholder="Contraseña"></li>
+
+		<li><label for="pass2"><span class="icon-pass"></span><strong>Repetir contraseña</strong></label></li>
+		<li><input type="password" name="pass2" id="pass2_reg" placeholder="Contraseña"></li>
+		<li>
+			<label class="checkbox_label">
+	   			<input type="checkbox" name="accept" value="1" class="checkbox_input" id="tyc_reg"><span class="label-text">Acepto <a href="#">terminos y condiciones</a></span>
+	   		</label>
+	   	</li>
+		<li><button onclick="goReg();">Registrar</button></li>
+	</ul>
+</div>
+<script src="views/js/reg.js"></script>
