@@ -10,7 +10,7 @@
         ini_set("session.gc_maxlifetime", time() + (60*60*24));        
       }
       $_SESSION['app_id'] = $db->recorrer($sql)[0];
-      echo 1;
+      echo 1; //Todo correcto
     }else{
       echo '<div class="warning-fail">
             			<div class="div-icon-warning">
