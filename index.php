@@ -9,6 +9,7 @@
 
   }else{
     include('core/controllers/homeController.php');
+    //Redirige a inicio 
   }
 
 ?>
