@@ -5,8 +5,8 @@
 
   session_start();
 
-  /*#Constantes de conexion
-  define('DB_HOST', 'localhost');
+  #Constantes de conexion
+  /*define('DB_HOST', 'localhost');
   define('DB_USER', 'root');
   define('DB_PASS', '');
   define('DB_NAME', 'complat');*/
@@ -17,11 +17,12 @@
   define('DB_PASS', 'complat1234');
   define('DB_NAME', 'u705536276_compl');
 
+
   #Constantes de la APP
   define('HTML_DIR', 'html/');
   define('APP_TITTLE', 'Complat' );
   define('APP_COPYRIGHT', 'Copyright &copy; ' . date('Y'),time() .' Complat Software.');
-  //define('APP_URL', 'http://localhost:8085/complat/');
+  //define('APP_URL', 'http://localhost/complat/');
   define('APP_URL', 'http://complat.esy.es/');
 
 

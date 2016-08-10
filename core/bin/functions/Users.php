@@ -8,7 +8,8 @@
           'id' => $d['id'],
           'user' => $d['user'],
           'pass' => $d['pass'],
-          'permiso' => $d['permiso']
+          'permiso' => $d['permiso'],
+          'activo' => $d['activo']
         );
       }
     } else{
