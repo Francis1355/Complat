@@ -15,12 +15,12 @@
 <body>	
 
 <section class="container">
-  <div class="warning-info">
+  <div class="warning-success">
     <div class="div-icon-warning">
       <span class="icon-exclamation"></span>
     </div>
     <div class="div-texto-warning">
-      <p class="p-texto-warning">Para visualizar este contenido debes haber <a href="#" id="btn_logearte" >iniciado sesión</a></p>
+      <p class="p-texto-warning">Nueva contraseña generada: <strong><?php echo $password; ?></strong> , intenta <a href="#" id="btn_logearte">iniciar sesion.</a> Una vez iniciada la sesión te recomendamos cambiar tu contraseña.</p>
     </div>   
   </div>
 	<h1>Complat</h1>

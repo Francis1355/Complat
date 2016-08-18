@@ -76,6 +76,10 @@
 <!--Registro-->
 <?php include(HTML_DIR . '/public/registro.html') ?>
 
+<!--Lost pass-->
+
+<?php include(HTML_DIR . '/public/lostpass.html') ?>
+
 <script src="views/js/main.js"></script>
 
 </body>

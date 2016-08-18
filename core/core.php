@@ -46,6 +46,7 @@
   require('core/bin/functions/Encrypt.php');
   require('core/bin/functions/Users.php');
   require('core/bin/functions/EmailTemplate.php');
+  require('core/bin/functions/LostPassTemplate.php');
 
   $users = Users();
 

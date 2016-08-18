@@ -1,0 +1,12 @@
+<div class="fondo-obscuro" id="fondo_obscuro"></div>
+<div class="lostpass-box" id="lostpass_box" onkeypress="return runScriptLostPass(event)">
+	<div id="_AJAX_LOSTPASS_"></div>
+	<a href="#" class="btn-cerrar-lostpass" id="btn_cerrar_lostpass">X</a>
+	<h3 class="titulo-login"><span class="icon-login"></span>Recuperar contraseña</h3>
+	<ul class="form-lostpass">
+		<li><label for="user_lostpass"><span class="icon-user"></span><strong>Email</strong></label></li>
+		<li><input type="text" name="user" id="user_lostpass" placeholder="Email"></li>
+		<li><button onclick="goLostPass();">Recuperar contraseña</button></li>
+	</ul>
+</div>
+<script src="views/js/lostpass.js"></script>

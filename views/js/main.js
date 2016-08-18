@@ -35,4 +35,20 @@ $("#btn_logearte").click(function(){
 });
 
 
+//Lostpass
+
+$("#btn_ir_lostpass").click(function(){
+	$("#login_box").fadeOut(100);
+	$("#lostpass_box").fadeIn(500);
+});
+
+
+$("#btn_cerrar_lostpass").click(function(){
+	$("#fondo_obscuro").fadeOut(300);
+	$("#lostpass_box").fadeOut(500);
+});
+
+
+
+
 

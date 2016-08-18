@@ -17,6 +17,10 @@
     public function recorrer($query){
       return mysqli_fetch_array($query);
     }
+
+    /*public function __destruct(){
+      $this->close(); 
+    }*/
   }
 
 ?>
