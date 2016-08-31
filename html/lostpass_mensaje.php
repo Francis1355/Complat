@@ -20,12 +20,13 @@
       <span class="icon-exclamation"></span>
     </div>
     <div class="div-texto-warning">
-      <p class="p-texto-warning">Nueva contraseña generada: <strong><?php echo $password; ?></strong> , intenta <a href="#" id="btn_logearte">iniciar sesion.</a> Una vez iniciada la sesión te recomendamos cambiar tu contraseña.</p>
+      <p class="p-texto-warning">Nueva contraseña generada: <strong><?php echo $password; ?></strong> , intenta <a href="#" id="btn_logearte" class="link-warning">iniciar sesion.</a> Una vez iniciada la sesión te recomendamos cambiar tu contraseña.</p>
     </div>   
   </div>
-	<h1>Complat</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam incidunt qui fuga quam aliquam error distinctio nam animi. Molestias animi neque esse impedit tenetur nihil, debitis error vitae iure inventore!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a cum porro. Quasi possimus fugit eum impedit cumque qui, rerum nostrum laborum, consequatur dolorum. Libero, quasi iusto enim recusandae veritatis.</p>
+	
+  <?php include(HTML_DIR . '/overall/main.php') ?>
+
+
 </section>
 
 <!--Iniciar sesión-->

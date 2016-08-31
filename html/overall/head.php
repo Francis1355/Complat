@@ -5,4 +5,5 @@
 	<link rel="stylesheet" href="views/css/estilo.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="views/js/generales.js"></script>
+	<script src="views/js/menu.js"></script>
 </head>

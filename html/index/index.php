@@ -12,7 +12,7 @@
 <?php include(HTML_DIR.'overall/header.php') ?>
 
 
-<body>	
+<body>
 
 <section class="container">
 <?php 
@@ -49,25 +49,26 @@
                   <span class="icon-exclamation"></span>
                 </div>
                 <div class="div-texto-warning">
-                  <p class="p-texto-warning">Para activar su cuenta favor de verificar el correo que ha sido enviado a la cuenta registrada.</p>
+                  <p class="p-texto-warning">Para activar su cuenta favor de verificar el correo que ha sido enviado a la cuenta registrada. En caso de no recibir el correo favor de verificar en correos no deseados.</p>
                 </div>  
             </div>';
-      echo '<div class="warning-info">
+      /*echo '<div class="warning-info">
                 <div class="div-icon-warning">
                   <span class="icon-exclamation"></span>
                 </div>
                 <div class="div-texto-warning">
                   <p class="p-texto-warning">En caso de no recibir el correo favor de verificar en correos no deseados (SPAM).</p>
                 </div>  
-            </div>';
+            </div>';*/
 
     }
 
   }
 ?>
-	<h1>Complat</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam incidunt qui fuga quam aliquam error distinctio nam animi. Molestias animi neque esse impedit tenetur nihil, debitis error vitae iure inventore!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a cum porro. Quasi possimus fugit eum impedit cumque qui, rerum nostrum laborum, consequatur dolorum. Libero, quasi iusto enim recusandae veritatis.</p>
+
+<?php include(HTML_DIR . '/overall/main.php') ?>
+
+
 </section>
 
 <!--Iniciar sesión-->

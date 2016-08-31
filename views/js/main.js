@@ -5,6 +5,11 @@ $("#btn_login").click(function(){
 	$("#login_box").slideDown(300);
 });
 
+$("#btn_login_movil").click(function(){
+	$("#fondo_obscuro").fadeIn(400);
+	$("#login_box").slideDown(300);
+});
+
 $("#btn_cerrar_login").click(function(){
 	$("#fondo_obscuro").fadeOut(300);
 	$("#login_box").fadeOut(500);
@@ -13,6 +18,11 @@ $("#btn_cerrar_login").click(function(){
 //Registro
 
 $("#btn_registro").click(function(){
+	$("#fondo_obscuro").fadeIn(200);
+	$("#registro_box").slideDown(300);
+});
+
+$("#btn_registro_movil").click(function(){
 	$("#fondo_obscuro").fadeIn(200);
 	$("#registro_box").slideDown(300);
 });
@@ -47,8 +57,3 @@ $("#btn_cerrar_lostpass").click(function(){
 	$("#fondo_obscuro").fadeOut(300);
 	$("#lostpass_box").fadeOut(500);
 });
-
-
-
-
-
