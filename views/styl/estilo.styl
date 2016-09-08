@@ -30,7 +30,7 @@ header
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
-	z-index 2
+	z-index 4
 
 .container-header
 	//background red 
@@ -38,6 +38,7 @@ header
 	margin auto 
 	position relative 
 	width 1024px 
+	z-index 2
 
 
 .complat-logo
@@ -92,10 +93,11 @@ header
 .container 
 	height auto  
 	margin auto
+	margin-bottom 120px 
 	margin-top 120px  
 	position relative 
 	width 1024px
-	z-index -2 
+	z-index 2
 	
 
 
@@ -188,7 +190,7 @@ header
 	height 100%
 	opacity 0.6
 	background-color #000
-	z-index 2
+	z-index 4
 	display none
 
 .login-box 
@@ -595,6 +597,160 @@ header
 //Termina lostpass
 
 
+// Inicia home temporal 
+
+.clockdiv
+	width 300px 
+	height 100px 
+	padding 38px 20px 20px 20px 
+	box-sizing border-box
+	border-radius 3px 
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+	
+
+
+//Courses page 
+.cointainer-courses 
+	width 100%
+	height auto  
+	position relative 
+	margin 0 auto 
+	
+
+.search-courses
+	width 450px 
+	height 85px 
+	position relative 
+	margin 0 auto 
+	padding 5px 5px 5px 5px 
+	box-sizing border-box
+.cointainer-courses .search-courses ul 
+	list-style none 
+	margin-left -40px 
+	display inline-block
+
+.cointainer-courses .search-courses ul li
+	margin-left 5px  
+	display inline-block
+.cointainer-courses .search-courses ul li input
+	padding 10px 
+	box-sizing border-box
+	width 380px 
+	outline none 
+	margin-top 5px 
+	color #666
+	border 1px solid #aaa
+	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
+	border-radius 2px
+	&:focus
+		background #fff
+		border 1px solid #555
+
+		
+.icon-search:before
+	content "\f002"
+	font-family "FontAwesome"
+	font-size 20px 
+	color col_header
+	
+.icon-search:hover 
+	cursor pointer
+	
+
+.courses 
+	width 100% 
+	height auto  
+	position relative
+	margin-top 30px 
+	margin-bottom 30px 
+	//background red 
+		
+.course 
+	position relative
+	width 315px 
+	height 200px
+	margin-right 10px  
+	display inline-block
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.75); 
+	margin-bottom 15px 
+	padding-top 5px 
+	padding-left 5px 
+	padding-right 5px 
+	border-radius 2px 
+	cursor pointer 
+	&:hover 
+		-webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+		
+	//box-sizing border-box
+
+.course-a 
+	text-decoration none 
+
+.course-img
+	position relative
+	margin 0 auto 
+	width 315px
+	height 100px
+.course-title
+	color col_header
+	margin-top 3px 
+.course-description
+	//position absolute
+	margin-top -15px
+	//width 100% 
+	color col_header 
+	text-align justify 
+
+.courses-ajax
+	display none 
+	
+
+.btn-get 
+	background:col_header;
+	color:#fff;
+	display:inline-block;
+	font-size:1.25em;
+	padding:10px 0;
+	text-align:center;
+	width:200px;
+	text-decoration:none;
+	margin-top 30px 
+	//box-shadow:0px 3px 0px #373c3c;
+	&:hover
+		background #3A3A3A
+
+.temary 
+	list-style none 
+	padding 0
+	margin 0
+.temary li 
+	margin-top 8px 
+.temary-subitem
+	margin-left 20px 
+
+.temary-a-item
+	text-decoration none 
+	color col_header
+	font-size 18px 
+	font-weight bold 
+.temary-a-subitem
+	text-decoration none 
+	color col_header
+	font-size 16px
+	font-weigh lighter
+
+.temary-a-item:hover, .temary-a-subitem:hover
+	color #0489B1
+	transition-duration 0.3s
+	
+
+		
 
 @media (max-width 1100px)
 	header
@@ -616,7 +772,6 @@ header
 		position relative
 		top 60px 
 		overflow-y scroll 
-		//overflow hidden
 		
 
 	.nav-movil ul 
@@ -624,8 +779,7 @@ header
 		padding 0
 		margin 0
 	.nav-movil ul li 
-		width 100% 
-		//background red  
+		width 100%  
 		margin-bottom 5px 
 		height 30px 
 		padding-top 15px 
@@ -693,6 +847,36 @@ header
 		height 450px
 		overflow-y scroll 
 		//overflow hidden 
+			
+	//Courses page 
+	
+	.cointainer-courses
+		width 100% 
+	.search-courses
+		width 100%
+		
+	.cointainer-courses .search-courses ul 
+		width 100% 
+		margin-left -45px 
+	
+	.cointainer-courses .search-courses ul li
+		display block 
+		width 100%	
+	.cointainer-courses .search-courses ul li input
+		width 100% 
+	.icon-search 
+		position absolute 
+		right 15px
+		top 35px 
+		
+	.course 
+		width 95%
+		display block 
+		margin 0 auto 
+		margin-top 30px 
+	.course-img 
+		width 100%  
+		
 		
 
 		

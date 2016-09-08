@@ -2,7 +2,7 @@
 	$db = new Conexion();
 	$email = $db->real_escape_string($_POST['email']);
 
-	$sql = $db->query("SELECT id, user FROM users WHERE email = '$email' LIMIT 1;");
+	$sql = $db->query("SELECT id_user, user FROM user WHERE email = '$email' LIMIT 1;");
 	if($db->rows($sql) > 0){
 
 		$data = $db->recorrer($sql);
@@ -33,7 +33,7 @@
             		</div>';
 
 		}else{
-			$db->query("UPDATE users SET keypass='$keypass', new_pass='$new_pass' WHERE id = '$id'; ");
+			$db->query("UPDATE user SET keypass='$keypass', new_pass='$new_pass' WHERE id = '$id'; ");
 			$HTML = 1; 
 		}
 

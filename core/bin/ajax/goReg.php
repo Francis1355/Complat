@@ -4,7 +4,7 @@
 	$user = $db-> real_escape_string($_POST['user']);
 	$email = $db-> real_escape_string($_POST['email']);
 
-	$sql = $db->query("SELECT user FROM users WHERE user ='$user' OR email = '$email' LIMIT 1;");
+	$sql = $db->query("SELECT user FROM user WHERE user ='$user' OR email = '$email' LIMIT 1;");
 
 	if($db->rows($sql) == 0){
 
@@ -33,7 +33,7 @@
             		</div>';
 
 		}else{
-			$db->query("INSERT INTO users(user, pass, email, keyreg) VALUES('$user', '$pass', '$email', '$keyreg');");
+			$db->query("INSERT INTO user(user, pass, email, keyreg) VALUES('$user', '$pass', '$email', '$keyreg');");
 			$sql_2 = $db->query("SELECT MAX(id) AS id FROM users;");
 			$_SESSION['app_id'] = $db->recorrer($sql_2)[0]; 
 			$db->liberar($sql_2); 

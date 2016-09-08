@@ -9,10 +9,10 @@
 
 <?php include(HTML_DIR.'overall/head.php') ?>
 
+<body>
+
 <?php include(HTML_DIR.'overall/header.php') ?>
 
-
-<body>
 
 <section class="container">
 <?php 
@@ -52,21 +52,21 @@
                   <p class="p-texto-warning">Para activar su cuenta favor de verificar el correo que ha sido enviado a la cuenta registrada. En caso de no recibir el correo favor de verificar en correos no deseados.</p>
                 </div>  
             </div>';
-      /*echo '<div class="warning-info">
-                <div class="div-icon-warning">
-                  <span class="icon-exclamation"></span>
-                </div>
-                <div class="div-texto-warning">
-                  <p class="p-texto-warning">En caso de no recibir el correo favor de verificar en correos no deseados (SPAM).</p>
-                </div>  
-            </div>';*/
-
     }
 
   }
 ?>
 
-<?php include(HTML_DIR . '/overall/main.php') ?>
+<!--Sección principal-->
+
+<?php 
+  if(!isset($_SESSION['app_id'])){
+    include(HTML_DIR . '/index/main_logout.php');
+  }else{
+    include(HTML_DIR . '/index/main_login.php');
+  }
+?>
+
 
 
 </section>
@@ -81,7 +81,6 @@
 
 <?php include(HTML_DIR . '/public/lostpass.html') ?>
 
-<script src="views/js/main.js"></script>
 
 </body>
 

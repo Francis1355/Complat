@@ -1,11 +1,11 @@
 <?php
   function Users(){
     $db = new Conexion();
-    $sql = $db->query("SELECT * FROM users;");
+    $sql = $db->query("SELECT * FROM user;");
     if($db->rows($sql) > 0){
       while($d = $db->recorrer($sql)){
-        $users[$d['id']] = array(
-          'id' => $d['id'],
+        $users[$d['id_user']] = array(
+          'id_user' => $d['id_user'],
           'user' => $d['user'],
           'pass' => $d['pass'],
           'permiso' => $d['permiso'],
