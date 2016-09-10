@@ -1,10 +1,23 @@
 <link rel='stylesheet' href='views/css/flexslider.css'/>
 <script type='text/javascript'>
   $(window).load(function() {
-      $('.flexslider').flexslider();
+    var target_flexslider = $('.flexslider');
+    $('.flexslider').flexslider({
+      start: function(slider){
+        $('.pre-flexslider-container').css("display","none");
+        $('.flexslider').css("display","block");
+        slider.resize();
+    }
+
+    });
+
   });
 </script>
 <script src='views/js/jquery.flexslider.js'></script>
+
+<center><div class="pre-flexslider-container">
+     <img src="views/img/loaderBar.gif" alt="Cargando...">
+</div></center>
 
 <div class="flexslider">
       <ul class="slides">

@@ -19,7 +19,7 @@
 <script src='views/js/jquery.flexslider.js'></script>
 
 <center><div class="pre-flexslider-container">
-     <p>Cargando...</p>
+     <img src="views/img/loaderBar.gif" alt="Cargando...">
 </div></center>
 
 
