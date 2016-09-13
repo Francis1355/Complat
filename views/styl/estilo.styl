@@ -707,6 +707,25 @@ header
 	color col_header 
 	text-align justify 
 
+.course-enrolled-icon:before 
+	position absolute 
+	z-index 4
+	right 10px 
+	top 10px
+	content "\f058"
+	font-family "FontAwesome"
+	font-size 25px 
+	color #38610B
+	
+
+.course-taken-icon:before 
+	content "\f058"
+	font-family "FontAwesome"
+	font-size 18px 
+	color #38610B
+	position relative
+	margin-left 10px 
+
 .courses-ajax
 	display none 
 	
@@ -715,10 +734,24 @@ header
 	background:col_header;
 	color:#fff;
 	display:inline-block;
-	font-size:1.25em;
+	font-size:18px;
 	padding:10px 0;
 	text-align:center;
 	width:200px;
+	text-decoration:none;
+	margin-top 30px 
+	//box-shadow:0px 3px 0px #373c3c;
+	&:hover
+		background #3A3A3A
+		
+.btn-unsuscribe
+	background:col_header;
+	color:#fff;
+	display:inline-block;
+	font-size:18px;
+	padding:10px 0;
+	text-align:center;
+	width:250px;
 	text-decoration:none;
 	margin-top 30px 
 	//box-shadow:0px 3px 0px #373c3c;
