@@ -16,7 +16,7 @@
 
 
 <section class="container">
-	<?php include(HTML_DIR.'index/courses.php'); ?>
+	<?php include(HTML_DIR.'/courses/logout/courses.php'); ?>
 </section>
 
 

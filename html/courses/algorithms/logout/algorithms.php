@@ -1,6 +1,5 @@
 <?php
 	//Usuario no inicio sesion  
-	//echo "Inside algoritms logout";
 
 	//Cargar temario desde base de datos  
 
