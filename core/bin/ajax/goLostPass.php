@@ -33,7 +33,7 @@
             		</div>';
 
 		}else{
-			$db->query("UPDATE user SET keypass='$keypass', new_pass='$new_pass' WHERE id = '$id'; ");
+			$db->query("UPDATE user SET keypass='$keypass', new_pass='$new_pass' WHERE id_user = '$id'; ");
 			$HTML = 1; 
 		}
 

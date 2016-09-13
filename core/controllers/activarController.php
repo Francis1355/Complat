@@ -3,9 +3,9 @@
 		$db = new Conexion();
 		$id = $_SESSION['app_id'];
 		$key = $db->real_escape_string($_GET['key']);
-		$sql= $db->query("SELECT id FROM users WHERE id = '$id' AND keyreg = '$key' LIMIT 1;");
+		$sql= $db->query("SELECT id_user FROM user WHERE id_user = '$id' AND keyreg = '$key' LIMIT 1;");
 		if($db->rows($sql) > 0){
-			$db->query("UPDATE users SET activo='1', keyreg='' WHERE id = '$id';");
+			$db->query("UPDATE user SET activo='1', keyreg='' WHERE id_user = '$id';");
 			header('location: ?view=home&success=true');
 		}else{
 			header('location: ?view=home&error=true');

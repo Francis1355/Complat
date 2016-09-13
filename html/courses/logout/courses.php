@@ -9,14 +9,14 @@
 	<div class="courses courses-ajax"></div>
 
 	<div class="courses">
-		<!--<div class="course">
+		<div class="course">
 			<img class="course-img" src="courses_assets/algorithms/img/div_img_course.png" alt="Algoritmos">
 			<h4 class="course-title">Diseño de algoritmos</h4>
 			<p class="course-description">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem lorem ipsum lorem ipsum lorem ipsum sit.</p>
-		</div>-->
+		</div>
 
 		<?php 
-			//Inicia conexion con base de datos cargar cursos de programacion 
+			/*//Inicia conexion con base de datos cargar cursos de programacion 
 			$db = new Conexion();
 			$sql = $db->query("SELECT * FROM course WHERE type ='PROGRAMACION';");
 			if($db->rows($sql) > 0){
@@ -30,7 +30,7 @@
 								</div>
 							</a>';
 
-				}
+				}*/
 			}
 
 

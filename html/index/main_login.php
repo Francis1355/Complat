@@ -21,19 +21,24 @@
 
 <div class="flexslider">
       <ul class="slides">
-          <li>
-              <a href="?view=quienes_somos"><img src="views/img/index_logout/slides/slide1.jpg"></a>
-              <p class="flex-caption"></p>
-          </li>
-          <li>
-              <a href="?view=lineamientos"><img src="views/img/index_logout/slides/slide2.jpg"></a>
-              <p class="flex-caption"></p>
-          </li>
-          <li>
-              <a href="?view=aviso"><img src="views/img/index_logout/slides/slide3.jpg"></a>
-              <p class="flex-caption"></p>
-          </li>
-          </ul>
+        <li>
+            <a href="#"><img src="views/img/index_logout/slides/slide1.png"></a>
+            <p class="flex-caption">Slide 1</p>
+        </li>
+        <li>
+            <a href="#"><img src="views/img/index_logout/slides/slide2.png"></a>
+            <p class="flex-caption">Slide 2</p>
+        </li>
+        <li>
+            <a href="#"><img src="views/img/index_logout/slides/slide3.png"></a>
+            <p class="flex-caption">Slide 3</p>
+        </li>
+      </ul>
 </div>
 
 <h2>Mis cursos:</h2>
+
+<?php 
+  //Cargar cursos del usuario 
+
+?>

@@ -34,7 +34,7 @@
 
 		}else{
 			$db->query("INSERT INTO user(user, pass, email, keyreg) VALUES('$user', '$pass', '$email', '$keyreg');");
-			$sql_2 = $db->query("SELECT MAX(id) AS id FROM users;");
+			$sql_2 = $db->query("SELECT MAX(id_user) AS id FROM user;");
 			$_SESSION['app_id'] = $db->recorrer($sql_2)[0]; 
 			$db->liberar($sql_2); 
 			$HTML = 1;

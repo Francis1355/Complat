@@ -17,7 +17,7 @@
 
 		<?php 
 			//Inicia conexion con base de datos cargar cursos de programacion 
-			$db = new Conexion();
+			/*$db = new Conexion();
 			$sql = $db->query("SELECT * FROM course WHERE type ='PROGRAMACION';");
 			if($db->rows($sql) > 0){
 				echo '<h3>Programación:</h3>';
@@ -30,7 +30,7 @@
 								</div>
 							</a>';
 
-				}
+				}*/
 			}
 
 
