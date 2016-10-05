@@ -43,10 +43,4 @@
 
 <h1>Complat</h1>
 <p>Bienvenido a COMPLAT!</p>
-<p>Iniciamos nuestro primer curso de <strong>diseño de algoritmos</strong> en: </p>
-<br>
-<br>
-<br>
-<center><div class="clockdiv">
-	<iframe src="http://free.timeanddate.com/countdown/i5d15sbw/n65/cf11/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cac333/cpc900/pcfff/tcfff/fs100/szw320/szh135/iso2016-09-14T17:35:00" allowTransparency="true" frameborder="0" width="252" height="19"></iframe>
 

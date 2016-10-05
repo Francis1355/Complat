@@ -12,6 +12,7 @@
 			$datos_curso = $db->recorrer($sql2); 
 			echo '<img src="'.$datos_curso[7].'" alt="'.$datos_curso[1].'" class="course-img-main"/>';
 			echo '<h3 class="course-title-main">'.$datos_curso[1].'</h3>';
+			echo '<center><div class="video-intro-course">'.$datos_curso['video_intro_path'].'<div></center>';
 			echo '<p class="course-main-description">'.$datos_curso[3].'</p>';
 			echo '<h3>Temas:</h3>';
 		}

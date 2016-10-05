@@ -4,7 +4,7 @@
 	$id_user = $users[$_SESSION['app_id']]['id_user'];
 	$db = new Conexion();
 	$sql = $db->query("SELECT * FROM course_index WHERE id_course = '1';");// Query para cargar informacion del curso 
-	$sql2= $db->query("SELECT * FROM course WHERE id_course = '1' LIMIT 1;"); //Query para cargar la informacion de el curso 
+	$sql2= $db->query("SELECT * FROM course WHERE id_course = '1' LIMIT 1;"); //Query para cargar la informacion de el curso con id 1
 	//Query para comprobar si el usuario esta inscrito en el curso 
 	$sql3 = $db->query("SELECT id_course FROM rel_user_course_score WHERE id_user = '$id_user' LIMIT 1");
 	$sql4 = $db->query("SELECT * FROM rel_advance WHERE id_user = '$id_user'");
@@ -13,6 +13,7 @@
 			$datos_curso = $db->recorrer($sql2); 
 			echo '<img src="'.$datos_curso[7].'" alt="'.$datos_curso[1].'" class="course-img-main"/>';
 			echo '<h3 class="course-title-main">'.$datos_curso[1].'</h3>';
+			echo '<center><div class="video-intro-course">'.$datos_curso['video_intro_path'].'<div></center>';
 			echo '<p class="course-main-description">'.$datos_curso[3].'</p>';
 			echo '<h3>Temas:</h3>';
 		}
@@ -23,7 +24,7 @@
 			while ($datos_indice = $db->recorrer($sql)) {
 			echo '<ul class="temary">';
 			$datos_seen = $db->recorrer($sql4);
-			if($datos_indice[6] == $datos_seen[4]){
+			if($datos_indice[5] == $datos_seen[4]){
 				// Si el dato de la tabla course index es igual al dato de la tabla rel_index ("topic_number")
 				if($datos_seen[3] == 1){
 					//usuario ya vio el tema

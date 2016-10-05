@@ -31,7 +31,7 @@
 					}			
 				}
 			}else{
-				echo "<h4>Tu busqueda no devolvio ningun resultado.</h4>";
+				echo "<h4>Tu búsqueda no devolvió ningún resultado.</h4>";
 			}
 
 		}else{
@@ -49,10 +49,14 @@
 				}
 
 			}else{
-				echo "<h4>Tu busqueda no devolvio ningun resultado.</h4>";
+				echo "<h4>Tu búsqueda no devolvió ningún resultado.</h4>";
 			}
 
 		}
 		
 	}
+
+	$db->liberar($sql);
+	$db->liberar($sql_2);
+	$db->close();
 ?>

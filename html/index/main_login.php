@@ -53,10 +53,12 @@
       $sql = $db->query("SELECT * FROM course;");
       if($db->rows($sql) > 0){
         echo "<h2>Mis cursos:</h2>";
+        $flagCourse = false;
         while ($datos = $db->recorrer($sql)) {
           $id_course = $datos[0];
           $sql_2 = $db->query("SELECT * FROM rel_user_course_score WHERE id_course ='$id_course' AND id_user='$id_user';");
-          if($db->rows($sql_2) == 1){
+          if($db->rows($sql_2) == 1){ //Si existe la relacion 
+            $flagCourse = true;
             echo  '<a href="'.$datos[5].'" class="course-a">
                 <div class="course">
                   <span class="course-enrolled-icon"></span>
@@ -67,8 +69,9 @@
               </a>'; 
           }
         }
-      }else{
-        echo "Usted no esta inscrito en ningun curso aun.";
+        if(!$flagCourse){
+          echo "Usted no esta inscrito en ningun curso.";
+        }
       }
 
 
