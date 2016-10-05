@@ -11,6 +11,10 @@
       case 'lostpass':
         require('core/bin/ajax/goLostPass.php');
         break;
+
+      case 'search':
+        require('core/bin/ajax/goSearch.php');
+        break;
       default:
         header('location: index.php');
         break;

@@ -1,14 +1,14 @@
 <div class="cointainer-courses">
 	<div class="search-courses">
 		<ul>
-			<li><input type="text" placeholder="Buscar..." class="input-search"></li>
+			<li><input type="text" id="input_search" placeholder="Buscar..." class="input-search" onkeyup="search();"></li>
 			<li><span class="icon-search"></span></li>
 		</ul>
 	</div>
 
-	<div class="courses courses-ajax"></div>
+	<div class="courses courses-ajax" id="_SEARCH_AJAX_"></div>
 
-	<div class="courses">
+	<div class="courses" id="courses">
 		<!--<div class="course">
 			<img class="course-img" src="courses_assets/algorithms/img/div_img_course.png" alt="Algoritmos">
 			<h4 class="course-title">Diseño de algoritmos</h4>

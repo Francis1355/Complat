@@ -26,7 +26,7 @@
 			echo '</ul>';
 		}
 
-		echo '<a href="#" value="#" id="btn_get" class="btn-get">Inscribirse al curso</a>';
+		echo '<a href="#" id="btn_login_get" class="btn-get">Inscribirse al curso</a>';
 	}
 
 

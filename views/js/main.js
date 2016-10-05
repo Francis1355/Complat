@@ -5,6 +5,11 @@ $( document ).ready(function() {
 		$("#login_box").slideDown(300);
 	});
 
+	$("#btn_login_get").click(function(){
+		$("#fondo_obscuro").fadeIn(400);
+		$("#login_box").slideDown(300);
+	});
+
 	$("#btn_login_movil").click(function(){
 		$("#fondo_obscuro").fadeIn(400);
 		$("#login_box").slideDown(300);
@@ -59,4 +64,49 @@ $( document ).ready(function() {
 	});
 
 });
+
+
+
+
+
+//Inicia buscador 
+
+function search(){
+	var input_search, form, connect, responseText, result, flagSearch;
+	input_search = __('input_search').value;
+	if(input_search == ""){
+		flagSearch = false;
+	}else{
+		flagSearch = true;
+	}
+	if(flagSearch){
+		//Ocultar div id courses 
+		$('#courses').hide();
+		//Mostar div ajax
+		$('#_SEARCH_AJAX_').show(); 
+	}else{
+		//Ocultar div ajax
+		$('#_SEARCH_AJAX_').hide(); 
+		//Mostrar div ajax 
+		$('#courses').show();
+	}
+	form = 'keyword=' + input_search;
+	connect = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+	connect.onreadystatechange = function() {
+    if(connect.readyState == 4 && connect.status == 200){
+        if(connect.responseText){        	
+          __('_SEARCH_AJAX_').innerHTML = connect.responseText;
+        }
+    }else if(connect.readyState != 4){
+	    result = "<center><img src='views/img/spin.gif' alt='Cargando...''></center>";
+	    __('_SEARCH_AJAX_').innerHTML = result;
+    }
+
+  }
+  connect.open('POST', 'ajax.php?mode=search', true);
+  connect.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  connect.send(form);
+}
+
+//Termina buscador
 	
