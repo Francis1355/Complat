@@ -16,8 +16,11 @@
 			echo '<p class="course-main-description">'.$datos_curso[3].'</p>';
 			echo '<h3>Temas:</h3>';
 		}
-		
-		while ($datos_indice = $db->recorrer($sql)) {
+
+		//TODO: verificar si el usuario esta inscrito al curso 
+		if($db->rows($sql3) > 0){
+			//Usuario incrito 
+			while ($datos_indice = $db->recorrer($sql)) {
 			echo '<ul class="temary">';
 			$datos_seen = $db->recorrer($sql4);
 			if($datos_indice[6] == $datos_seen[4]){
@@ -44,19 +47,23 @@
 			}
 			echo '</ul>';
 		}
-
-		if($db->rows($sql3) > 0){
-			while($datos_incripcion = $db->recorrer($sql3)){
-				if($datos_incripcion[0] == 1){
-					//Usuario incrito en el curso 
-					echo '<a href="#" value="#" id="btn_unsuscribe" class="btn-unsuscribe">Desiscribirse del curso</a>';
-				}else{
-					//Usuario no inscrito en el curso 
-					echo '<a href="#" value="#" id="btn_get" class="btn-get">Inscribirse al curso</a>';
-				}
+		echo '<a href="#" value="#" id="btn_unsuscribe" class="btn-unsuscribe">Desiscribirse del curso</a>';
+		}else{
+			//Usuario no inscrito 
+			while ($datos_indice = $db->recorrer($sql)) {
+			echo '<ul class="temary">';
+			if($datos_indice[3] == 0){
+				echo '<li><a href="#" class="temary-a-item">'.$datos_indice[2].'</a></li>';
+			}else{
+				echo '<li class="temary-subitem"><a href="#" class="temary-a-subitem">'.$datos_indice[2].'</a></li>';
 			}
-
+			echo '</ul>';
 		}
+
+		echo '<a href="#" id="btn_login_get_login" class="btn-get">Inscribirse al curso</a>';
+		}
+		
+		
 	}
 
 

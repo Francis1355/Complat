@@ -49,7 +49,7 @@
                   <span class="icon-exclamation"></span>
                 </div>
                 <div class="div-texto-warning">
-                  <p class="p-texto-warning">Para activar su cuenta favor de verificar el correo que ha sido enviado a la cuenta registrada. En caso de no recibir el correo favor de verificar en correos no deseados.</p>
+                  <p class="p-texto-warning">Para activar su cuenta favor de verificar el correo que ha sido enviado al Email registrado.</p>
                 </div>  
             </div>';
     }
