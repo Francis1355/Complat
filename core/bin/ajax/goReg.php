@@ -33,7 +33,7 @@
             		</div>';
 
 		}else{
-			$db->query("INSERT INTO user(user, pass, email, keyreg) VALUES('$user', '$pass', '$email', '$keyreg');");
+			$db->query("INSERT INTO user (user, pass, email, permiso, keyreg, keypass, new_pass) VALUES ('$user', '$pass', '$email', '0', '$keyreg', '','');");
 			$sql_2 = $db->query("SELECT MAX(id_user) AS id FROM user;");
 			$_SESSION['app_id'] = $db->recorrer($sql_2)[0]; 
 			$db->liberar($sql_2); 
