@@ -48,6 +48,7 @@
 
     <?php 
       //Inicia conexion con base de datos cargar cursos de programacion 
+      //TODO: Cargar porcentaje de avance de curso 
       $id_user = $users[$_SESSION['app_id']]['id_user'];
       $db = new Conexion();
       $sql = $db->query("SELECT * FROM course;");

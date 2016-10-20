@@ -2,7 +2,7 @@
 @import "font-awesome.min.styl"
 col_header = #333333
 color_font = #3A3A3A
-azul_complat = #0B4C5F//#114DFF
+azul_complat = #0C88C2//#0B4C5F//#114DFF
 col_fail = #F10000
 col_success = #00AE00
 col_info = #FF6600
@@ -783,6 +783,23 @@ header
 	transition-duration 0.3s
 	
 
+
+.video-intro-course
+	height 0 
+	padding-bottom 56.25% // Proporcion 16:9
+	position relative
+	display block
+
+.video-intro-course iframe 
+	position absolute
+	top: 0;
+	left: 0;
+	width 100% 
+	height 100% 
+	
+//Termina course
+	
+
 		
 
 @media (max-width 1100px)
@@ -862,6 +879,7 @@ header
 	.container
 		width 95% 
 		margin-top 80px 
+		
 		
 	.course-img-main
 		width 100%

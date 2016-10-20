@@ -16,13 +16,16 @@
 
 
 <section class="container">
-	<?php
-		if(!isset($_SESSION['app_id'])){
-			include(HTML_DIR.'courses/algorithms/logout/algorithms.php');
-		}else{
-			include(HTML_DIR.'courses/algorithms/login/algorithms.php');
-		}
-	?>
+
+		<?php
+			if(!isset($_SESSION['app_id'])){
+				include(HTML_DIR.'courses/algorithms/logout/algorithms.php');
+			}else{
+				include(HTML_DIR.'courses/algorithms/login/algorithms.php');
+			}
+		?>
+
+	
 </section>
 
 

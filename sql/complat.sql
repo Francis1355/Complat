@@ -6,7 +6,9 @@ CREATE TABLE `course` (
   `type` varchar(50) NOT NULL,
   `course_path` varchar(100)  NOT NULL,
   `image_path` varchar(200)  DEFAULT NULL,
-  `image_main_path` varchar(100) NOT NULL
+  `image_main_path` varchar(100) NOT NULL,
+  `video_intro_path` varchar(500) DEFAULT NULL,
+
 )
 
 

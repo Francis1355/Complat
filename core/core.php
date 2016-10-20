@@ -8,16 +8,22 @@
   session_start();
   #Constantes de conexion
   
-  define('DB_HOST', 'localhost');
+  /*define('DB_HOST', 'localhost');
   define('DB_USER', 'root');
   define('DB_PASS', '');
-  define('DB_NAME', 'complat');
+  define('DB_NAME', 'complat_v2');*/
 
   #Constantes de conexion
   /*define('DB_HOST', 'mysql.hostinger.mx');
   define('DB_USER', 'u705536276_admin');
   define('DB_PASS', 'complat1234');
   define('DB_NAME', 'u705536276_compl');*/
+
+  #Constantes de conexion
+  define('DB_HOST', 'complat.ddns.net');
+  define('DB_USER', 'admincomplat');
+  define('DB_PASS', 'platcom.2016/ñ');
+  define('DB_NAME', 'complat');
 
 
 

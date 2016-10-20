@@ -7,7 +7,9 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <?php include(HTML_DIR.'overall/head.php') ?>
+
 
 <?php include(HTML_DIR.'overall/header.php') ?>
 
@@ -24,8 +26,7 @@
     </div>   
   </div>
 	
-  <?php include(HTML_DIR . '/overall/main.php') ?>
-
+  
 
 </section>
 
