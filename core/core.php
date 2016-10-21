@@ -20,7 +20,12 @@
   define('DB_NAME', 'u705536276_compl');*/
 
   #Constantes de conexion
-  define('DB_HOST', 'complat.ddns.net');
+  /*define('DB_HOST', 'complat.ddns.net');
+  define('DB_USER', 'admincomplat');
+  define('DB_PASS', 'platcom.2016/ñ');
+  define('DB_NAME', 'complat');*/
+
+  define('DB_HOST', '192.168.1.64');
   define('DB_USER', 'admincomplat');
   define('DB_PASS', 'platcom.2016/ñ');
   define('DB_NAME', 'complat');

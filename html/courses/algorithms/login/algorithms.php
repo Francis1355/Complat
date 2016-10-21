@@ -30,19 +30,19 @@
 					//usuario ya vio el tema
 					if($datos_indice[3] == 0){
 						//El elemento es un titulo
-						echo '<li><a href="#" class="temary-a-item">'.$datos_indice[2].'</a><span class="course-taken-icon"></span></li>';
+						echo '<li><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-item">'.$datos_indice[2].'</a><span class="course-taken-icon"></span></li>';
 					}else{
 						//El elemento es un subtitulo 
-						echo '<li class="temary-subitem"></span><a href="#" class="temary-a-subitem">'.$datos_indice[2].'</a><span class="course-taken-icon"></li>';
+						echo '<li class="temary-subitem"></span><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-subitem">'.$datos_indice[2].'</a><span class="course-taken-icon"></li>';
 					}
 				}else{
 					//Usuario no ha visto el tema
 					if($datos_indice[3] == 0){
 						//El elemento es un titulo
-						echo '<li><a href="#" class="temary-a-item">'.$datos_indice[2].'</a></li>';
+						echo '<li><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-item">'.$datos_indice[2].'</a></li>';
 					}else{
 						//El elemento es un subtitulo 
-						echo '<li class="temary-subitem"></span><a href="#" class="temary-a-subitem">'.$datos_indice[2].'</a></li>';
+						echo '<li class="temary-subitem"></span><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-subitem">'.$datos_indice[2].'</a></li>';
 					}
 				}
 			}
