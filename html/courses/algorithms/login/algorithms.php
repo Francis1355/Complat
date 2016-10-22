@@ -24,25 +24,25 @@
 			while ($datos_indice = $db->recorrer($sql)) {
 			echo '<ul class="temary">';
 			$datos_seen = $db->recorrer($sql4);
-			if($datos_indice[6] == $datos_seen[4]){
+			if($datos_indice['topic_number'] == $datos_seen['topic_number']){
 				// Si el dato de la tabla course index es igual al dato de la tabla rel_index ("topic_number")
-				if($datos_seen[3] == 1){
+				if($datos_seen['seen'] == 1){
 					//usuario ya vio el tema
-					if($datos_indice[3] == 0){
+					if($datos_indice['subitem'] == 0){
 						//El elemento es un titulo
-						echo '<li><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-item">'.$datos_indice[2].'</a><span class="course-taken-icon"></span></li>';
+						echo '<li><a href="?view=algorithms_content&id_course_index='.$datos_indice['id_course_index'].'&id_course=1" class="temary-a-item">'.$datos_indice['title'].'</a><span class="course-taken-icon"></span></li>';
 					}else{
 						//El elemento es un subtitulo 
-						echo '<li class="temary-subitem"></span><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-subitem">'.$datos_indice[2].'</a><span class="course-taken-icon"></li>';
+						echo '<li class="temary-subitem"></span><a href="?view=algorithms_content&id_course_index='.$datos_indice['id_course_index'].'&id_course=1" class="temary-a-subitem">'.$datos_indice['title'].'</a><span class="course-taken-icon"></li>';
 					}
 				}else{
 					//Usuario no ha visto el tema
-					if($datos_indice[3] == 0){
+					if($datos_indice['subitem'] == 0){
 						//El elemento es un titulo
-						echo '<li><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-item">'.$datos_indice[2].'</a></li>';
+						echo '<li><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-item">'.$datos_indice['title'].'</a></li>';
 					}else{
 						//El elemento es un subtitulo 
-						echo '<li class="temary-subitem"></span><a href="?view=algorithms_content&id_course_index='.$datos_indice[0].'&id_course=1" class="temary-a-subitem">'.$datos_indice[2].'</a></li>';
+						echo '<li class="temary-subitem"></span><a href="?view=algorithms_content&id_course_index='.$datos_indice['id_course_index'].'&id_course=1" class="temary-a-subitem">'.$datos_indice['title'].'</a></li>';
 					}
 				}
 			}
