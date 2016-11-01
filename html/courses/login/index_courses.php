@@ -21,7 +21,7 @@
 
 
 <!--Iniciar sesión-->
-<?php include(HTML_DIR . '/public/login.html') ?>
+<?php include(HTML_DIR . '/public/login.php') ?>
 
 <!--Registro-->
 <?php include(HTML_DIR . '/public/registro.html') ?>

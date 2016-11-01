@@ -15,6 +15,12 @@
       case 'search':
         require('core/bin/ajax/goSearch.php');
         break;
+      case 'enroll':
+        require('core/bin/ajax/goEnroll.php');
+        break;
+      case 'unsuscribe':
+        require('core/bin/ajax/goUnsuscribe.php');
+        break;
       default:
         header('location: index.php');
         break;

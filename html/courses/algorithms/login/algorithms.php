@@ -48,7 +48,16 @@
 			}
 			echo '</ul>';
 		}
-		echo '<a href="#" value="#" id="btn_unsuscribe" class="btn-unsuscribe">Desiscribirse del curso</a>';
+		echo "<div id='_AJAX_ENROLL_'></div>";
+		echo '<input type="hidden" value="'.$id_user.'" id="id_user_input"><input type="hidden" value="1" id="id_course_input">';
+		echo '<button id="btn_unsuscribe_course" class="btn-unsuscribe">Desiscribirse del curso</button>';
+		echo '<div class="box-warning-unsuscribe" id="box_warning_unsuscribe">
+			<div id="_AJAX_UNSUSCRIBE_"</div>
+			<p>¿Esta complematemente seguro de <strong>desiscribirse</strong> del curso?</p>
+			<p>¡Todos sus avances se <strong>eliminaran</strong>!</p>
+			<button id="btn_unsuscribe_yes" onClick="goUnsuscribe();" class="btn-unsuscribe-yes">Si</button>
+			<button id="btn_unsuscribe_cancel" class="btn-unsuscribe-cancel">Cancelar</button>
+		</div>';
 		}else{
 			//Usuario no inscrito 
 			while ($datos_indice = $db->recorrer($sql)) {
@@ -60,8 +69,9 @@
 			}
 			echo '</ul>';
 		}
-
-		echo '<a href="#" id="btn_login_get_login" class="btn-get">Inscribirse al curso</a>';
+		echo "<div id='_AJAX_ENROLL_'></div>";
+		echo '<input type="hidden" value="'.$id_user.'" id="id_user_input"><input type="hidden" value="1" id="id_course_input">';
+		echo '<button class="btn-get" id="btn_enroll_user" onclick="goEnroll();">Inscribirse al curso</button>';		
 		}
 		
 		
@@ -75,14 +85,5 @@
 	$db->close();
 
 ?>
-
-<!--<img src="courses_assets/algorithms/img/main-img-course.png" alt="#" class="course-img-main"/>
-<h3 class="course-title-main">Diseño de algoritmos</h3>
-<p class="course-main-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repellat velit in molestias dolore nobis recusandae voluptate mollitia nemo illum saepe cupiditate tempora ullam, vero adipisci, officia, dolor repellendus, tenetur.</p>
-<h3>Temas:</h3>
-<ul class="temary">
-	<li><a href="#" class="temary-a-item">1. Introdución</a></li>
-	<li class="temary-subitem"><a href="#" class="temary-a-subitem">1.1 ¿Qué es un algoritmo?</a></li>
-	<li class="temary-subitem"><a href="#" class="temary-a-subitem">1.2 Pruebas</a></li>
-</ul>
-<a href="#" value="#" id="btn_get" class="btn-get">Inscribirse al curso</a>-->
+<script src="views/js/enroll.js"></script>
+<script src="views/js/unsuscribe.js"></script>

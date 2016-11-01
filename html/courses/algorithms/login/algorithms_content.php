@@ -21,6 +21,7 @@
 		$id_course = $_GET['id_course']; 
 		$id_user = $_SESSION['app_id']; 
 
+
 		$sql = $db->query("SELECT content FROM course_content JOIN course_index using(id_course_index) WHERE id_course_index = '$id_course_index' LIMIT 1;");
 
 		$sql2 = $db->query("SELECT topic_number FROM course_index WHERE id_course_index = '$id_course_index' LIMIT 1;");
@@ -42,7 +43,7 @@
 </section>
 
 <!--Iniciar sesión-->
-<?php include(HTML_DIR . '/public/login.html') ?>
+<?php include(HTML_DIR . '/public/login.php') ?>
 
 <!--Registro-->
 <?php include(HTML_DIR . '/public/registro.html') ?>
@@ -53,5 +54,7 @@
 
 
 </body>
+
+
 
 </html>
