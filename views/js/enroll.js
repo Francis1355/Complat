@@ -19,8 +19,9 @@ function goEnroll() {
           __('_AJAX_ENROLL_').innerHTML = connect.responseText;
         }
     }else if(connect.readyState != 4){
-      $("#btn_enroll_user").hide(200);  
-      result ='<div class="enroll-user-info">';
+      $("#btn_enroll_user").hide();  
+      result ='<br>'; 
+      result +='<div class="enroll-user-info">';
       result +='Inscribiendo...'   
       result +='</div>';
       __('_AJAX_ENROLL_').innerHTML = result;  

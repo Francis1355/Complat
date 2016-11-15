@@ -25,8 +25,8 @@
   						<ul>
 							<li><a href="?view=perfil&id='.$_SESSION['app_id'].'">'.strtoupper($users[$_SESSION['app_id']]['user']).'</a></li>
 							<li><a href="?view=home">INICIO</a></li>
-							<li><a href="?view=about">ACERCA DE</a></li>
 							<li><a href="?view=courses">CURSOS</a></li>
+							<li><a href="?view=about">ACERCA DE</a></li>
 							<li><a href="?view=logout">SALIR</a></li>
   						</ul>
 					</nav>';
@@ -55,10 +55,11 @@
 					<nav class="nav-movil" id="nav_movil">
   						<ul>
   							<li><a href="?view=home">INICIO</a></li>
+  							<li><a href="?view=courses">CURSOS</a></li>
+  							<li><a href="?view=about">ACERCA DE</a></li>							
   							<li><a href="#" id="btn_login_movil">INICIAR SESIÓN</a></li>
 	    					<li><a href="#" id="btn_registro_movil">REGISTRO</a></li>				
-							<li><a href="?view=about">ACERCA DE</a></li>
-							<li><a href="?view=courses">CURSOS</a></li>
+							
   						</ul>
 					</nav>';
 		}

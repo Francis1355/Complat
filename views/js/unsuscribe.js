@@ -29,10 +29,12 @@ function goUnsuscribe(){
           __('_AJAX_UNSUSCRIBE_').innerHTML = connect.responseText;
         }
     }else if(connect.readyState != 4){
-      $("#btn_unsuscribe_course").hide(200); 
-	    result ='<div class="unsuscribe-user-info">';
-	    result +='Desiscribiendo...'   
-	    result +='</div>';
+      $("#btn_unsuscribe_course").hide(); 
+      result ='<br>'; 
+	    result += "<center><img src='views/img/loaderBar.gif' alt='Cargando...''></center>";
+      result +='<div class="unsuscribe-user-info">';
+      result +='Desincribiendo...';    
+      result +='</div>';
 	    __('_AJAX_UNSUSCRIBE_').innerHTML = result;
     }
 

@@ -2,7 +2,7 @@
 	<div class="search-courses">
 		<ul>
 			<li><input type="text" id="input_search" placeholder="Buscar..." class="input-search" onkeyup="search();"></li>
-			<li><span class="icon-search"></span></li>
+			<li>a<span class="icon-search"></span></li>
 		</ul>
 	</div>
 
