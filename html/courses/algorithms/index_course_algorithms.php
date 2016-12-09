@@ -12,21 +12,27 @@
 
 <body>
 
-<?php include(HTML_DIR.'overall/header.php'); ?>
+<div class="wrapper">
+
+	<?php include(HTML_DIR.'overall/header.php'); ?>
 
 
-<section class="container">
+	<section class="container">
 
-		<?php
-			if(!isset($_SESSION['app_id'])){
-				include(HTML_DIR.'courses/algorithms/logout/algorithms.php');
-			}else{
-				include(HTML_DIR.'courses/algorithms/login/algorithms.php');
-			}
-		?>
+			<?php
+				if(!isset($_SESSION['app_id'])){
+					include(HTML_DIR.'courses/algorithms/logout/algorithms.php');
+				}else{
+					include(HTML_DIR.'courses/algorithms/login/algorithms.php');
+				}
+			?>
 
-	
-</section>
+		
+	</section>
+	<div class="push"></div>
+
+
+</div>
 
 
 <!--Iniciar sesión-->
@@ -38,6 +44,8 @@
 <!--Lost pass-->
 
 <?php include(HTML_DIR . '/public/lostpass.html') ?>
+
+<footer class="footer"></footer>
 
 
 </body>

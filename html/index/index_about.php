@@ -12,12 +12,16 @@
 
 <body>
 
-<?php include(HTML_DIR.'overall/header.php'); ?>
+<div class="wrapper">
 
+	<?php include(HTML_DIR.'overall/header.php'); ?>
 
-<section class="container">
-	<?php include(HTML_DIR.'index/about.php'); ?>
-</section>
+	<section class="container">
+		<?php include(HTML_DIR.'index/about.php'); ?>
+	</section>
+	<<div class="push"></div>
+
+</div>
 
 
 <!--Iniciar sesión-->
@@ -29,6 +33,10 @@
 <!--Lost pass-->
 
 <?php include(HTML_DIR . '/public/lostpass.html') ?>
+
+
+
+<footer class="footer"></footer>
 
 
 </body>

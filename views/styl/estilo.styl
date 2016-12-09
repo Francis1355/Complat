@@ -6,6 +6,7 @@ azul_complat = #1976D2
 col_fail = #F10000
 col_success = #00AE00
 col_info = #FF6600
+col_footer = #333333
 
 #btn-menu 
 	display none 
@@ -23,7 +24,7 @@ body
 header 
 	background col_header
 	height 80px 
-	position fixed 
+	position absolute
 	top 0 
 	left 0 
 	width 100% 
@@ -31,6 +32,24 @@ header
 	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 	z-index 4
+
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+.footer 
+	background col_footer
+
 
 .container-header
 	//background red 
@@ -953,6 +972,7 @@ header
 	header
 		height 60px 
 		box-shadow none 
+		position fixed 
 	.container-header 
 		width 100% 
 		display none 
