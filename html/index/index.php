@@ -11,12 +11,20 @@
 
 <body>
 
+<script>
+    $(document).on("ready", function(){
+      $.fn.snow({flakeColor: '#1976D2'});
+    });
+  </script>
+
+
 <div class="wrapper">
 
   <?php include(HTML_DIR.'overall/header.php') ?>
 
 
   <section class="container">
+
   <?php 
   	if(isset($_GET['success'])){
           echo '<div class="warning-success">
@@ -69,7 +77,14 @@
     }
   ?>
 
-
+  <div class="warning-info">
+    <div class="div-icon-warning">
+      <span class="icon-exclamation"></span>
+    </div>
+    <div class="div-texto-warning">
+      <p class="p-texto-warning">Sitio web en construcción.</p>
+    </div>  
+  </div>
 
   </section>
   <div class="push"></div>

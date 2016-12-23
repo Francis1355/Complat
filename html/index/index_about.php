@@ -36,7 +36,9 @@
 
 
 
-<footer class="footer"></footer>
+<footer class="footer">
+	<?php include(HTML_DIR . '/overall/footer.php') ?>
+</footer>
 
 
 </body>

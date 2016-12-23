@@ -18,4 +18,5 @@
 	<script src="views/js/generales.js"></script>
 	<script src="views/js/menu.js"></script>
 	<script src="views/js/main.js"></script>
+	<script src="https://cloud.github.com/downloads/kopipejst/jqSnow/jquery.snow.js"></script>
 </head>
