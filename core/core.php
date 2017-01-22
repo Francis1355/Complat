@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
 
@@ -10,18 +10,16 @@
 
 
   #Constantes de conexion
-  /*define('DB_HOST', 'complat.ddns.net');
-  define('DB_USER', 'admincomplat');
-  define('DB_PASS', 'platcom.2016/ñ');
-  define('DB_NAME', 'complat');*/
 
-  define('DB_HOST', '192.168.1.69');
+  define('DB_HOST', '192.168.1.71');
   define('DB_USER', 'admincomplat');
   define('DB_PASS', 'platcom.2016/ñ');
   define('DB_NAME', 'complat');
 
-
-
+  /*define('DB_HOST', 'mysql.hostinger.mx');
+  define('DB_USER', 'u543487469_compa');
+  define('DB_PASS', 'platcOm.2016/n');
+  define('DB_NAME', 'u543487469_compl');*/
 
   #Constantes de la APP
 
@@ -29,7 +27,7 @@
   define('APP_TITTLE', 'Complat' );
   define('APP_COPYRIGHT', 'Copyright &copy; ' . date('Y'),time() .' Complat Software.');
   //define('APP_URL', 'http://localhost/complat/');
-  define('APP_URL', 'http://complat.esy.es/');
+  define('APP_URL', 'http://complat.net/');
 
 
   /*#constante de php mailer 

@@ -11,7 +11,7 @@ function goEnroll() {
     if(connect.readyState == 4 && connect.status == 200){
         if(connect.responseText==1){
           	result ='<div class="enroll-user-success">';
-            result +='Inscrito correctamente!';    
+            result +='¡Inscrito correctamente!';    
             result +='</div>';
             __('_AJAX_ENROLL_').innerHTML = result;
           	location.reload();

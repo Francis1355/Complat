@@ -21,7 +21,7 @@ function goUnsuscribe(){
     if(connect.readyState == 4 && connect.status == 200){
         if(connect.responseText==1){
           	result ='<div class="unsuscribe-user-success">';
-            result +='Desiscrito correctamente!';    
+            result +='¡Dado de baja correctamente!';    
             result +='</div>';
             __('_AJAX_UNSUSCRIBE_').innerHTML = result;
           	location.reload();
@@ -33,7 +33,7 @@ function goUnsuscribe(){
       result ='<br>'; 
 	    result += "<center><img src='views/img/loaderBar.gif' alt='Cargando...''></center>";
       result +='<div class="unsuscribe-user-info">';
-      result +='Desincribiendo...';    
+      result +='Dando de baja...';    
       result +='</div>';
 	    __('_AJAX_UNSUSCRIBE_').innerHTML = result;
     }

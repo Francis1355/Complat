@@ -50,10 +50,10 @@
 		}
 		echo "<div id='_AJAX_ENROLL_'></div>";
 		echo '<input type="hidden" value="'.$id_user.'" id="id_user_input"><input type="hidden" value="1" id="id_course_input">';
-		echo '<button id="btn_unsuscribe_course" class="btn-unsuscribe">Desiscribirse del curso</button>';
+		echo '<button id="btn_unsuscribe_course" class="btn-unsuscribe">Darse de baja</button>';
 		echo '<div class="box-warning-unsuscribe" id="box_warning_unsuscribe">
 			<div id="_AJAX_UNSUSCRIBE_"</div>
-			<p>¿Esta complematemente seguro de <strong>desiscribirse</strong> del curso?</p>
+			<p>¿Esta complematemente seguro de <strong>darse de baja</strong> del curso?</p>
 			<p>¡Todos sus avances se <strong>eliminaran</strong>!</p>
 			<button id="btn_unsuscribe_yes" onClick="goUnsuscribe();" class="btn-unsuscribe-yes">Si</button>
 			<button id="btn_unsuscribe_cancel" class="btn-unsuscribe-cancel">Cancelar</button>

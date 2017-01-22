@@ -10,12 +10,12 @@
 <?php include(HTML_DIR.'overall/head.php') ?>
 
 <body>
-
-<script>
+<!--Hacer nevar-->
+<!--<script>
     $(document).on("ready", function(){
       $.fn.snow({flakeColor: '#1976D2'});
     });
-  </script>
+  </script>-->
 
 
 <div class="wrapper">

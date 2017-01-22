@@ -25,10 +25,10 @@
 
   <div class="flexslider" style="display: none">
         <ul class="slides">
-            <li>
+            <!--<li>
                 <a href="https://www.youtube.com/watch?v=ZMhfGHqn5SY"><img src="views/img/index_logout/slides/slide1.png" target="_blank"></a>
                 <p class="flex-caption">Feliz navidad te desea Complat</p>
-            </li>
+            </li>-->
             <li>
                 <a href="?view=algorithms"><img src="views/img/index_logout/slides/slide2.png"></a>
                 <p class="flex-caption">Curso básico de diseño de algoritmos ¡Ya disponible!</p>
