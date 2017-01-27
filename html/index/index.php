@@ -36,7 +36,6 @@
              			</div>  
               </div>';
       } 
-
   ?>
   <?php 
   	if(isset($_GET['error'])){
@@ -59,7 +58,7 @@
                     <span class="icon-exclamation"></span>
                   </div>
                   <div class="div-texto-warning">
-                    <p class="p-texto-warning">Para activar su cuenta favor de verificar el correo que ha sido enviado al Email registrado.</p>
+                    <p class="p-texto-warning">Para activar su cuenta favor de verificar el correo que ha sido enviado al email registrado.</p>
                   </div>  
               </div>';
       }
@@ -87,6 +86,8 @@
   </div>
 
   </section>
+  <br>
+  <br>
   <div class="push"></div>
 
 </div>

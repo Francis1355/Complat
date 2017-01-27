@@ -19,7 +19,7 @@
 	<section class="container">
 		<?php include(HTML_DIR.'index/about.php'); ?>
 	</section>
-	<<div class="push"></div>
+	<div class="push"></div>
 
 </div>
 

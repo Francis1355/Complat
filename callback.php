@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 
 	//curl_setopt( $ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4 );
 
@@ -7,8 +7,8 @@
 	$db = new Conexion();
 
 	$fb = new Facebook\Facebook([
-  					'app_id' => '1347508705259958',
-  					'app_secret' => 'e3d5390a5a646355eecd323ca4ecb6e9',
+  					'app_id' => '110004242845198',
+  					'app_secret' => 'fc14f5c89d299ad42f4d52c863204d59',
   					'default_graph_version' => 'v2.8',
   				]);
 
@@ -32,8 +32,7 @@
 	        $db->liberar($sql);
 	    	$db->close();
 	        header('Location: index.php?view=home');
-	    }  
-      	}else{
+	    }else{
       	//Registrar con email proporcianado por facebook 
 	      	$keyreg = md5(time());
 
@@ -73,4 +72,5 @@
 	}
 
 ?>
+
 

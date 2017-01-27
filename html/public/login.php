@@ -14,19 +14,19 @@
 	   		</label>
 	   	</li>
 		<li><button onclick="goLogin();">Iniciar sesión</button></li>
-		<!--<li>
+		<li>
 			<?php 
-				/*$fb = new Facebook\Facebook([
-  					'app_id' => '1347508705259958', // Replace {app-id} with your app id
-  					'app_secret' => 'e3d5390a5a646355eecd323ca4ecb6e9',
+				$fb = new Facebook\Facebook([
+  					'app_id' => '110004242845198', // Replace {app-id} with your app id
+  					'app_secret' => 'fc14f5c89d299ad42f4d52c863204d59',
   					'default_graph_version' => 'v2.8',
   				]);
 				$helper = $fb->getRedirectLoginHelper();
 				$permissions = ['email']; // Optional permissions
-				$loginUrl = $helper->getLoginUrl('http://complat.esy.es/callback.php', $permissions);
-				echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';*/
+				$loginUrl = $helper->getLoginUrl('http://complat.net/callback.php', $permissions);
+				echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
 			?>
-		</li>-->
+		</li>
 	</ul>
 	<ul>
 		<li>¿No estas registrado? <a href="#" id="btn_ir_registro">¡Registrate!</a>

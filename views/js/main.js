@@ -63,6 +63,12 @@ $( document ).ready(function() {
 		$("#lostpass_box").fadeOut(500);
 	});
 
+
+	/*$("#btn_unsuscribe_cancel").click(function(){
+    	$('body, html').animate({
+            scrollTop: '0px'
+    }, 0);*/
+
 });
 
 
