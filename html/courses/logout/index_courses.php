@@ -5,12 +5,10 @@
 	}
 ?>
 <!DOCTYPE html>
-<html lang="es">
 
-<?php include(HTML_DIR.'overall/head.php'); ?>
-
-
-<body>
+<head>
+  <?php include(HTML_DIR.'overall/head.php') ?>
+</head>
 
 <div class="wrapper">
 

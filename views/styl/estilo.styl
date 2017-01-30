@@ -18,12 +18,6 @@ body
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size 16px 
 	color color_font
-	//background url('http://www.ultrahdfreewallpapers.com/uploads/large/3d-and-abstract/abstract-hd-wallpaper-661.jpg') #A98436 no-repeat;
-	//background url('http://cdn.paper4pc.com/images/abstract-minimalistic-white-wallpaper-1.jpg') #A98436 no-repeat;
-  	//background-attachment fixed
-  	/*-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	background-size: cover;*/
 	
 //Inicia Header
 
@@ -34,34 +28,41 @@ header
 	top 0 
 	left 0 
 	width 100% 
-	/*-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);*/
 	-webkit-box-shadow: 0px 5px 0px 0px rgba(50, 50, 50, 0.5);
 	-moz-box-shadow:    0px 5px 0px 0px rgba(50, 50, 50, 0.5);
 	box-shadow:         0px 5px 0px 0px rgba(50, 50, 50, 0.5);
 	z-index 4
 
 
-html, body {
+html, body{
     height: 100%;
-}
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
-}
-.footer, .push {
-    height: 142px; /* .push must be the same height as .footer */
 }
 
-.footer 
+.wrapper{
+    height: 100%;
+    height: auto !important;
+    margin: 0 auto -140; /* the bottom margin is the negative value of the footer's height */
+    min-height: 100%;
+}
+.footer, .push{
+    height: 140px; /* .push must be the same height as .footer */
+}
+
+.push{
+	height 140px 
+}
+    
+
+/*footer 
 	background col_footer
+	width 100% */
+
+.footer {
+	background col_footer 
+}
 
 
 .container-header
-	//background red 
 	height 80px 
 	margin auto 
 	position relative 
@@ -76,14 +77,13 @@ html, body {
 	width 180px 
 	
 .nav-desktop 
+	font-size 14px 
+	font-weight bold 
 	height 80px 
 	list-style none 
 	position absolute 
 	right 0 
 	width 800px
-	//background red 
-	font-weight bold 
-	font-size 14px 
 
 .nav-movil 
 	display none 
@@ -157,7 +157,6 @@ html, body {
 	color white 
 	font-weight normal
 	height auto 
-	//background red  
 	left 50px
 	margin-bottom auto 
 	margin-top auto 
@@ -205,41 +204,43 @@ html, body {
 	&:hover 
 		color #DF0101
 		transition-duration 0.3s
+		
+
 //Termina clases generales Desktop 
 
 
 //Inicia login
 
 .fondo-obscuro
+	background-color #000
+	display none
+	height 100%
+	left 0
+	opacity 0.6
 	position fixed 
 	top 0
-	left 0
 	width 100%
-	height 100%
-	opacity 0.6
-	background-color #000
 	z-index 4
-	display none
 
 .login-box 
-	width 550px 
-	height auto 
+	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
 	background white 
-	z-index 4
-	position fixed //absolute
-	left 0
-	right 0
-	margin-left auto 
-	margin-right auto
-	margin auto 
-	top 10px 
-	padding 10px 10px 10px 10px 
+	border-radius 2px 
+	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
 	box-sizing border-box
 	display none 
-	border-radius 2px 
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	height auto 
+	left 0
+	margin auto 
+	margin-left auto 
+	margin-right auto
+	padding 10px 10px 10px 10px 
+	position fixed //absolute
+	right 0
+	top 10px 
+	width 550px 
+	z-index 4
 .login-box ul 
 	list-style none 
 .login-box ul li 
@@ -247,20 +248,20 @@ html, body {
 	margin-bottom 5px 
 
 .btn-cerrar-login
-	float right 
-	text-decoration none 
 	color black 
+	float right 
 	font-size 18px 
+	text-decoration none 
 	&:hover 
-		transition-duration 0.2s
 		color azul_complat
+		transition-duration 0.2s
 
 .form-login 
-	list-style none 
-	border-top solid 1px #E6E6E6
 	border-bottom solid 1px #E6E6E6
-	padding-top 20px 
+	border-top solid 1px #E6E6E6
+	list-style none 
 	padding-bottom 15px 
+	padding-top 20px 
 	
 .form-login  li 
 	margin-left -40px 
@@ -269,22 +270,22 @@ html, body {
 	
 
 .form-login input, label, button 
-	width 100%  
+	border none 
+	box-sizing border-box
+	color #3A3A3A 
 	margin-bottom 20px 
 	padding 5px 
-	box-sizing border-box
-	border none 
-	color #3A3A3A 
 	text-align center 
+	width 100%  
 	
 .form-login input
-	outline none 
-	margin-top 5px 
-	color #666
 	border 1px solid #AAA
-	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
 	border-radius 2px
+	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
+	color #666
 	height 40px 
+	margin-top 5px 
+	outline none 
 	&:focus 
 		background #fff
 		border 1px solid azul_complat //#555
@@ -305,35 +306,35 @@ html, body {
 	input[type="checkbox"] 
 		display none 		
 		+ .label-text:before
-			content "\f096"
-			font-family "FontAwesome"
-			speak none 
-			font-style normal 
-			font-weight normal
-			font-variant normal
-			text-transform none 
-			line-height 1
 			-webkit-font-smoothing antialiased 
-			width 1em 
+			content "\f096"
 			display inline-block 
-			margin-right 5px 
+			font-family "FontAwesome"
 			font-size 18px 
+			font-style normal 
+			font-variant normal
+			font-weight normal
+			line-height 1
+			margin-right 5px 
+			speak none 
+			text-transform none 
+			width 1em 
 		&:checked + .label-text:before
-			content "\f14a"
-			color azul_complat //#00D079
 			animation pulse 180ms ease-in
+			color azul_complat //#00D079
+			content "\f14a"
 					
 		&:disabled + .label-text
 			color #aaa
 			&:before 
-				content "\f0c8"
 				color #ccc
+				content "\f0c8"
 .form-login li button 
 	background azul_complat
+	border-radius 2px
+	box-sizing border-box  
 	color white 
 	padding 15px 15px 15px 15px 
-	box-sizing border-box  
-	border-radius 2px
 	&:hover 
 		background #0489B1
 		transition-duration 0.3s
@@ -341,10 +342,10 @@ html, body {
 		background #0B2F3A
 
 .icon-login:before
+	color red
 	content "\f023"
 	font-family "FontAwesome"
 	margin-right 5px 
-	color red
 .titulo-login
 	color red  
 		
@@ -355,46 +356,45 @@ html, body {
 //Inicia registro 
 
 .registro-box 
-	width 550px 
-	height auto 
-	//margin-bottom px 
+	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
 	background white 
-	z-index 4
-	position fixed 
-	left 0
-	right 0
-	margin-left auto 
-	margin-right auto
-	margin auto 
-	top 10px 
-	padding 10px 10px 10px 10px 
+	border-radius 2px 
+	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75); 
 	box-sizing border-box
 	display none 
-	border-radius 2px 
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75); 
+	height auto 
+	left 0
+	margin auto 
+	margin-left auto 
+	margin-right auto
+	padding 10px 10px 10px 10px 
+	position fixed 
+	right 0
+	top 10px 
+	width 550px 
+	z-index 4
 .registro-box ul 
 	list-style none 
 .registro-box ul li 
-	margin-left -40px 
 	margin-bottom 5px 
+	margin-left -40px 
 
 .btn-cerrar-registro
-	float right 
-	text-decoration none 
 	color black 
+	float right 
 	font-size 18px 
+	text-decoration none 
 	&:hover 
-		transition-duration 0.2s
 		color azul_complat
+		transition-duration 0.2s
 
 .form-registro
-	list-style none 
-	border-top solid 1px #E6E6E6
 	border-bottom solid 1px #E6E6E6
-	padding-top 20px
+	border-top solid 1px #E6E6E6
+	list-style none 
 	padding-bottom 15px  
+	padding-top 20px
 	
 .form-registro  li 
 	margin-left -40px 
@@ -403,25 +403,25 @@ html, body {
 	
 
 .form-registro input, label, button 
-	width 100%  
+	border none 
+	box-sizing border-box
+	color #3A3A3A 
 	margin-bottom 20px 
 	padding 5px 
-	box-sizing border-box
-	border none 
-	color #3A3A3A 
 	text-align center 
+	width 100%  
 
 .form-registro button
 	margin-bottom 0
 	
 .form-registro input
-	outline none 
-	margin-top 5px 
-	color #666
 	border 1px solid #AAA
-	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
 	border-radius 2px
+	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
+	color #666
 	height 40px 
+	margin-top 5px 
+	outline none 
 	&:focus 
 		background #fff
 		border 1px solid azul_complat //#555
@@ -436,36 +436,36 @@ html, body {
 	input[type="checkbox"] 
 		display none 		
 		+ .label-text:before
-			content "\f096"
-			font-family "FontAwesome"
-			speak none 
-			font-style normal 
-			font-weight normal
-			font-variant normal
-			text-transform none 
-			line-height 1
 			-webkit-font-smoothing antialiased 
-			width 1em 
+			content "\f096"
 			display inline-block 
-			margin-right 5px 
+			font-family "FontAwesome"
 			font-size 18px 
+			font-style normal 
+			font-variant normal
+			font-weight normal
+			line-height 1
+			margin-right 5px 
+			speak none 
+			text-transform none 
+			width 1em 
 		&:checked + .label-text:before
-			content "\f14a"
-			color azul_complat //#00D079
 			animation pulse 180ms ease-in
+			color azul_complat //#00D079
+			content "\f14a"
 					
 		&:disabled + .label-text
 			color #aaa
 			&:before 
-				content "\f0c8"
 				color #ccc
+				content "\f0c8"
 				
 .form-registro li button 
 	background azul_complat
+	border-radius 2px
+	box-sizing border-box  
 	color white 
 	padding 15px 15px 15px 15px 
-	box-sizing border-box  
-	border-radius 2px
 	&:hover 
 		background #0489B1
 		transition-duration 0.3s
@@ -473,10 +473,10 @@ html, body {
 		background #0B2F3A
 
 .icon-login:before
+	color red
 	content "\f023"
 	font-family "FontAwesome"
 	margin-right 5px 
-	color red
 .titulo-registro
 	color red  
 	
@@ -506,45 +506,45 @@ html, body {
 //Inicia lostpass
 
 .lostpass-box 
-	width 550px 
-	height auto 
+	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
 	background white 
-	z-index 4
-	position fixed 
-	left 0
-	right 0
-	margin-left auto 
-	margin-right auto
-	margin auto 
-	top 10px 
-	padding 10px 10px 10px 10px 
+	border-radius 2px 
+	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
 	box-sizing border-box
 	display none 
-	border-radius 2px 
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	height auto 
+	left 0
+	margin auto 
+	margin-left auto 
+	margin-right auto
+	padding 10px 10px 10px 10px 
+	position fixed 
+	right 0
+	top 10px 
+	width 550px 
+	z-index 4
 .lostpass-box ul 
 	list-style none 
 .lostpass-box ul li 
-	margin-left -40px 
 	margin-bottom 5px 
+	margin-left -40px 
 
 .btn-cerrar-lostpass
-	float right 
-	text-decoration none 
 	color black 
+	float right 
 	font-size 18px 
+	text-decoration none 
 	&:hover 
-		transition-duration 0.2s
 		color azul_complat
+		transition-duration 0.2s
 
 .form-lostpass
-	list-style none 
-	border-top solid 1px #E6E6E6
 	border-bottom solid 1px #E6E6E6
-	padding-top 20px 
+	border-top solid 1px #E6E6E6
+	list-style none 
 	padding-bottom 15px 
+	padding-top 20px 
 	
 .form-lostpass  li 
 	margin-left -40px 
@@ -553,25 +553,25 @@ html, body {
 	
 
 .form-lostpass input, label, button 
-	width 100%  
+	border none 
+	box-sizing border-box
+	color #3A3A3A 
 	margin-bottom 20px 
 	padding 5px 
-	box-sizing border-box
-	border none 
-	color #3A3A3A 
 	text-align center 
+	width 100%  
 
 .form-lostpass button
 	margin-bottom 0
 	
 .form-lostpass input
-	outline none 
-	margin-top 5px 
-	color #666
 	border 1px solid #AAA
-	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
 	border-radius 2px
+	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
+	color #666
 	height 40px 
+	margin-top 5px 
+	outline none 
 	&:focus 
 		background #fff
 		border 1px solid azul_complat //#555
@@ -586,36 +586,36 @@ html, body {
 	input[type="checkbox"] 
 		display none 		
 		+ .label-text:before
-			content "\f096"
-			font-family "FontAwesome"
-			speak none 
-			font-style normal 
-			font-weight normal
-			font-variant normal
-			text-transform none 
-			line-height 1
 			-webkit-font-smoothing antialiased 
-			width 1em 
+			content "\f096"
 			display inline-block 
-			margin-right 5px 
+			font-family "FontAwesome"
 			font-size 18px 
+			font-style normal 
+			font-variant normal
+			font-weight normal
+			line-height 1
+			margin-right 5px 
+			speak none 
+			text-transform none 
+			width 1em 
 		&:checked + .label-text:before
-			content "\f14a"
-			color azul_complat //#00D079
 			animation pulse 180ms ease-in
+			color azul_complat //#00D079
+			content "\f14a"
 					
 		&:disabled + .label-text
 			color #aaa
 			&:before 
-				content "\f0c8"
 				color #ccc
+				content "\f0c8"
 				
 .form-lostpass li button 
 	background azul_complat
+	border-radius 2px
+	box-sizing border-box  
 	color white 
 	padding 15px 15px 15px 15px 
-	box-sizing border-box  
-	border-radius 2px
 	&:hover 
 		background #0489B1
 		transition-duration 0.3s
@@ -627,132 +627,118 @@ html, body {
 
 // Inicia home temporal 
 
-.clockdiv
-	width 300px 
-	height 100px 
-	padding 38px 20px 20px 20px 
-	box-sizing border-box
-	border-radius 3px 
-	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.75);
-	
-
 
 //Courses page 
 .cointainer-courses 
-	width 100%
 	height auto  
-	position relative 
 	margin 0 auto 
+	position relative 
+	width 100%
 	
 
 .search-courses
-	width 450px 
+	box-sizing border-box
 	height 85px 
-	position relative 
 	margin 0 auto 
 	padding 5px 5px 5px 5px 
-	box-sizing border-box
+	position relative 
+	width 450px 
+	
 .cointainer-courses .search-courses ul 
+	display inline-block
 	list-style none 
 	margin-left -40px 
-	display inline-block
 
 .cointainer-courses .search-courses ul li
-	margin-left 5px  
 	display inline-block
+	margin-left 5px  
 .cointainer-courses .search-courses ul li input
-	padding 10px 
-	box-sizing border-box
-	width 380px 
-	outline none 
-	margin-top 5px 
-	color #666
 	border 1px solid #aaa
-	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
 	border-radius 2px
+	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
+	box-sizing border-box
+	color #666
+	margin-top 5px 
+	outline none 
+	padding 10px 
+	width 380px 
 	&:focus
 		background #fff
 		border 1px solid #555
 
 		
 .icon-search:before
+	color col_header
 	content "\f002"
 	font-family "FontAwesome"
 	font-size 20px 
-	color col_header
 	
 .icon-search:hover 
 	cursor pointer
 	
 
 .courses 
-	width 100% 
 	height auto  
-	position relative
-	margin-top 30px 
 	margin-bottom 30px 
-	//background red 
-		
-.course 
+	margin-top 30px 
 	position relative
-	width 315px 
-	height 200px
-	margin-right 10px  
-	display inline-block
-	-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	width 100% 
+			
+.course 
 	-moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	border-radius 2px 
 	box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.75); 
+	cursor pointer 
+	display inline-block
+	height 200px
 	margin-bottom 15px 
-	padding-top 5px 
+	margin-right 10px  
 	padding-left 5px 
 	padding-right 5px 
-	border-radius 2px 
-	cursor pointer 
+	padding-top 5px 
+	position relative
+	width 315px 
 	&:hover 
-		-webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
 		-moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+		-webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
 		box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.75);
 		
-	//box-sizing border-box
 
 .course-a 
 	text-decoration none 
 
 .course-img
-	position relative
-	margin 0 auto 
-	width 315px
 	height 100px
+	margin 0 auto 
+	position relative
+	width 315px
 .course-title
 	color col_header
 	margin-top 3px 
 .course-description
-	//position absolute
 	margin-top -15px
-	//width 100% 
 	color col_header 
 	text-align justify 
 
 .course-enrolled-icon:before 
-	position absolute 
-	z-index 4
-	right 10px 
-	top 10px
+	color #38610B
 	content "\f058"
 	font-family "FontAwesome"
 	font-size 25px 
-	color #38610B
+	position absolute 
+	right 10px 
+	top 10px
+	z-index 4
 	
 
 .course-taken-icon:before 
+	color #38610B
 	content "\f058"
 	font-family "FontAwesome"
 	font-size 18px 
-	color #38610B
-	position relative
 	margin-left 10px 
+	position relative
 
 .courses-ajax
 	display none 
@@ -763,49 +749,47 @@ html, body {
 	color:#fff;
 	display:inline-block;
 	font-size:18px;
+	margin-top 30px 
 	padding:10px 0;
 	text-align:center;
-	width:200px;
 	text-decoration:none;
-	margin-top 30px 
-	//box-shadow:0px 3px 0px #373c3c;
+	width:200px;
 	&:hover
-		transition-duration 0.3s
 		background col_success
+		transition-duration 0.3s
 		
 .btn-unsuscribe
 	background:col_header;
 	color:#fff;
 	display:inline-block;
 	font-size:18px;
+	margin-top 30px 
 	padding:10px 0;
 	text-align:center;
 	width:250px;
-	margin-top 30px 
-	//box-shadow:0px 3px 0px #373c3c;
 	&:hover
-		transition-duration 0.3s
 		background col_fail
+		transition-duration 0.3s
 
 .temary 
 	list-style none 
-	padding 0
 	margin 0
+	padding 0
 .temary li 
 	margin-top 8px 
 .temary-subitem
 	margin-left 20px 
 
 .temary-a-item
-	text-decoration none 
 	color col_header
 	font-size 18px 
 	font-weight bold 
-.temary-a-subitem
 	text-decoration none 
+.temary-a-subitem
 	color col_header
 	font-size 16px
 	font-weigh lighter
+	text-decoration none 
 
 .temary-a-item:hover, .temary-a-subitem:hover
 	color #0489B1
@@ -813,18 +797,17 @@ html, body {
 	
 
 .video-course 
+	display block
 	height 0 
 	padding-bottom 56.25% // Proporcion 16:9
 	position relative
-	display block
-	//background red
 	
 .video-course iframe
+	height 100%	
+	left: 0;
 	position absolute
 	top: 0;
-	left: 0;
 	width 100% 
-	height 100%	
 	
 
 .a-course-content
@@ -863,7 +846,6 @@ html, body {
 	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
 	box-sizing border-box 
 	color white
-	//display none  
 	height 40px
 	margin-top 30px
 	padding 0.6em 
@@ -880,7 +862,6 @@ html, body {
 	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
 	box-sizing border-box 
 	color white
-	//display none  
 	height 40px
 	margin-top 30px
 	padding 0.6em 
@@ -890,33 +871,32 @@ html, body {
 	
 
 .box-warning-unsuscribe
+	-moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.75);
 	background white 
-	display none  
-	width 500px 
-	height 190px
 	border-radius 5px 
-	padding 0.5em 
+	box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.75);
 	box-sizing border-box
-	text-align center 
-	position absolute
+	display none  
+	height 190px
+	left 0
+	margin-bottom auto 
 	margin-left auto 
 	margin-right auto 
-	left 0
-	right 0
 	margin-top auto 
-	margin-bottom auto 
+	padding 0.5em 
+	position absolute
+	right 0
+	text-align center 
 	top 200px 
-	//bottom 0 
-	-webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.75);
+	width 500px 
 	
 .btn-unsuscribe-yes,.btn-unsuscribe-cancel
-	width 120px
-	padding 0.5em 
-	margin-top 20px 
 	margin-left 10px 
 	margin-right 10px  
+	margin-top 20px 
+	padding 0.5em 
+	width 120px
 	
 
 .unsuscribe-user-info
@@ -942,7 +922,6 @@ html, body {
 	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
 	box-sizing border-box 
 	color white
-	//display none  
 	height 40px
 	margin-top 30px
 	padding 0.6em 
@@ -959,7 +938,6 @@ html, body {
 	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
 	box-sizing border-box 
 	color white
-	//display none  
 	height 40px
 	margin-top 30px
 	padding 0.6em 
@@ -971,41 +949,41 @@ html, body {
 //Inicia footer 
 
 .footer-blocks
-	width 1024px
+	color white 
 	height 110px     
 	margin 0 auto 
 	padding 10px
 	position relative 
-	color white 
 	top 10px  
+	width 1024px
 
 .footer-blocks ul 
-	padding 0 
-	margin 0
 	list-style none 
+	margin 0
+	padding 0 
 
 .block-info
-	width 32%
+	height 90% 
 	left 0
-	height 90% 
 	position absolute
+	width 32%
 .block-contact
-	width 32%
-	position absolute
-	left 33% 
 	height 90% 
-.block-social
+	left 33% 
+	position absolute
 	width 32%
+.block-social
 	display inline-block 
 	height 90% 
-	position absolute
 	left 66%
+	position absolute
+	width 32%
 
 
 	
 .block-social ul li
-	margin-left 10px
 	display inline-block
+	margin-left 10px
 
 	
 .block-social ul li:first-child
@@ -1016,8 +994,8 @@ html, body {
 	height auto 
 
 .link-footer 
-	text-decoration none 
 	color #848484
+	text-decoration none 
 	&:hover
 		color white 
 		transition-duration 0.2s
@@ -1029,6 +1007,178 @@ html, body {
 
 	
 /*termina footer */
+
+
+/*Inicia blog*/
+
+.cointainer-blog 
+	height auto  
+	margin 0 auto 
+	position relative 
+	width 100%
+	
+
+.search-blog
+	box-sizing border-box
+	height 85px 
+	margin 0 auto 
+	padding 5px 5px 5px 5px 
+	position relative 
+	width 450px 
+	
+.cointainer-blog .search-blog ul 
+	display inline-block
+	list-style none 
+	margin-left -40px 
+
+.cointainer-blog .search-blog ul li
+	display inline-block
+	margin-left 5px  
+.cointainer-blog .search-blog ul li input
+	border 1px solid #aaa
+	border-radius 2px
+	box-shadow 0px 0px 3px #ccc, 0 10px 15px #eee inset
+	box-sizing border-box
+	color #666
+	margin-top 5px 
+	outline none 
+	padding 10px 
+	width 380px 
+	&:focus
+		background #fff
+		border 1px solid #555
+
+		
+	
+
+.blogs 
+	height auto  
+	margin-bottom 30px 
+	margin-top 30px 
+	position relative
+	width 100% 
+			
+.blog 
+	-moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+	border-radius 2px 
+	box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.75); 
+	cursor pointer 
+	display inline-block
+	height 200px
+	margin-bottom 15px 
+	margin-right 10px  
+	padding-left 5px 
+	padding-right 5px 
+	padding-top 5px 
+	position relative
+	width 315px 
+	&:hover 
+		-moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+		-webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+		
+
+.blog-a 
+	text-decoration none 
+
+.blog-img
+	height 100px
+	margin 0 auto 
+	position relative
+	width 315px
+.blog-title
+	color col_header
+	margin-top 10px 
+
+.blogs-ajax
+	display none 
+
+.blog-author 
+	position absolute  
+	bottom 8px
+	right 8px
+	font-style italic
+	color #6E6E6E
+.blog-line 
+	position absolute 
+	left 0 
+	right 0 
+	margin-left auto 
+	margin-right auto  
+	width 97% 
+	height 1px 
+	background #D8D8D8
+	bottom 35px 
+.blog-date 
+	position absolute
+	bottom 8px 
+	font-style italic
+	color #6E6E6E
+.blog-title-entry
+	color white 
+	position absolute
+	left 0 
+	right 0
+	margin-left auto 
+	margin-right auto
+	text-align center
+	top 35% 
+
+.img-blog
+	position relative 
+	width 100%
+	height 250px 
+	background col_header
+	padding 1em 
+	box-sizing border-box 
+	background: rgba(46,46,46,1);
+	background: -moz-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(8,38,68,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(46,46,46,1)), color-stop(100%, rgba(8,38,68,1)));
+	background: -webkit-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(8,38,68,1) 100%);
+	background: -o-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(8,38,68,1) 100%);
+	background: -ms-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(8,38,68,1) 100%);
+	background: linear-gradient(to bottom, rgba(46,46,46,1) 0%, rgba(8,38,68,1) 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#082644', GradientType=0 );
+	
+.info-author
+	width 100%
+	height 110px 
+	//background blue 
+	position relative  
+	margin-top 15px  
+	padding 1em 
+	box-sizing border-box
+	padding-left 0
+	
+
+.blog-img-author
+	width 80px
+	border-radius 50%
+	
+.blog-info-author-name-tw
+	top 40px
+	//background red 
+	position absolute 
+	left 95px 
+
+.blog-date-entry
+	position absolute
+	right 0px
+	color color_font
+	font-style italic
+	
+
+.blog-info-author-name-tw a 
+	color color_font
+	text-decoration none
+	&:hover 
+		color #00aced
+		transition-duration 0.2s
+.blog-content
+	text-align justify
+	line-height: 180%
+/*Termina blog*/
 	
 
 	
@@ -1037,40 +1187,43 @@ html, body {
 
 @media (max-width 1100px)
 
+	.blog-title-entry
+		top 25%
+
 	header
-		height 60px 
 		box-shadow none 
+		height 60px 
 		position fixed 
 	.container-header 
-		width 100% 
 		display none 
+		width 100% 
 	.complat-logo
 		display none 
 	.nav-desktop
 		display none 
 		
 	.nav-movil
-		display none 
 		background col_header 
-		width 100% 
+		display none 
 		height 250px   
+		overflow-y scroll 
 		position relative
 		top 60px 
-		overflow-y scroll 
+		width 100% 
 		
 
 	.nav-movil ul 
 		list-style none 
-		padding 0
 		margin 0
+		padding 0
 	.nav-movil ul li 
-		width 100%  
-		margin-bottom 5px 
+		border-bottom 1px solid #6E6E6E
 		height 30px 
+		margin-bottom 5px 
 		padding-top 15px 
 		pading 5px 5px 5px 5px
 		text-align center 
-		border-bottom 1px solid #6E6E6E
+		width 100%  
 		 
 	.nav-movil ul li a
 		color white 
@@ -1080,13 +1233,13 @@ html, body {
 		
 
 	.icon-menu
-		width 50px 
 		color #FFF
+		cursor pointer  
 		display block 
 		position absolute 
 		right 5px 
 		top 10px 
-		cursor pointer  
+		width 50px 
 		
 	.icon-menu:before 
 		color white 
@@ -1099,7 +1252,9 @@ html, body {
 		display none
 		
 	.titulo-complat
+		color #FFF
 		display block 
+		font-size 20px 
 		font-size 26px 
 		left 50px 
 		margin-left auto 
@@ -1108,45 +1263,66 @@ html, body {
 		right 50px 
 		text-align center 
 		top 5px 
-		color #FFF
-		font-size 20px 
 	
 	.container
-		width 95% 
 		margin-top 80px 
+		width 95% 
 		
 		
 	.course-img-main
 		width 100%
 	
 	.lostpass-box
-		width 100%
 		height 100%  
 		top 0
+		width 100%
 		
 	.registro-box
-		width 100% 
 		height 500px  
-		top 0
 		overflow-y scroll 
-		//overflow hidden
+		top 0
+		width 100% 
 		
 	.login-box 
-		width 100% 
 		height 450px
 		overflow-y scroll 
-		//overflow hidden 
-			
-	//Courses page 
+		width 100% 
+		
+	.cointainer-blog
+		width 100% 
+	.search-blog
+		width 100%
+	.blog 
+		display block 
+		margin 0 auto 
+		margin-top 30px 
+		width 95%
+		
+	.blog-img 
+		width 100% 
+		
+	.cointainer-blog  .search-blog ul 
+		margin-left -45px 
+		width 100% 
 	
+	.cointainer-blog  .search-blog ul li
+		display block 
+		width 100%	
+		
+	.cointainer-blog  .search-blog ul li input
+		width 100% 
+	
+		
+	//Courses page 
+		
 	.cointainer-courses
 		width 100% 
 	.search-courses
 		width 100%
 		
 	.cointainer-courses .search-courses ul 
-		width 100% 
 		margin-left -45px 
+		width 100% 
 	
 	.cointainer-courses .search-courses ul li
 		display block 
@@ -1159,16 +1335,16 @@ html, body {
 		top 35px 
 		
 	.course 
-		width 95%
 		display block 
 		margin 0 auto 
 		margin-top 30px 
+		width 95%
 	.course-img 
 		width 100%  
 		
 	.video-course iframe
-		width 100%
 		height 100%
+		width 100%
 		
 	.enroll-user-success,.enroll-user-info,.enroll-user-fail
 		width 100% 
@@ -1177,30 +1353,30 @@ html, body {
 		width 100% 
 		
 	.footer-blocks
-		width 100% 
-		height auto 
 		background col_header
+		height auto 
 		padding 0
+		width 100% 
 
 	.block-info
-		padding 10px 
-		width 80%   
-		position relative
 		display block
 		margin-left 0  
+		padding 10px 
+		position relative
+		width 80%   
 	.block-contact
-		padding 10px 
-		width 60% 
-		position relative
 		display block
-		margin-left 0 
 		left 0 
-	.block-social
+		margin-left 0 
 		padding 10px 
-		width 80% 
 		position relative
+		width 60% 
+	.block-social
 		display block 
 		left 0 
+		padding 10px 
+		position relative
+		width 80% 
 	
 		
 		

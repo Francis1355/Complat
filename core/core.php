@@ -25,20 +25,12 @@
   define('APP_URL', 'http://complat.net/');
 
 
-  /*#constante de php mailer 
-  define('PHPMAILER_HOST', 'mx1.hostinger.mx');
-  define('PHPMAILER_USER', 'soporte@complat.esy.es');
-  define('PHPMAILER_PASS', 'jtiaXpmuk_045.H');
-  define('PHPMAILER_PORT', 2525);*/
-
-
-
   /*Backup
 
   #constante de php mailer 
   define('PHPMAILER_HOST', 'smtp.gmail.com');
-  define('PHPMAILER_USER', 'soporte.complat@gmail.com');
-  define('PHPMAILER_PASS', 'jtiaXpmuk_045.G');
+  define('PHPMAILER_USER', 'gmail');
+  define('PHPMAILER_PASS', 'pass');
   define('PHPMAILER_PORT', 587);
   */
 

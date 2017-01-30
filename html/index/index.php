@@ -7,7 +7,10 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<?php include(HTML_DIR.'overall/head.php') ?>
+<head>
+  <?php include(HTML_DIR.'overall/head.php') ?>
+</head>
+
 
 <body>
 <!--Hacer nevar-->
